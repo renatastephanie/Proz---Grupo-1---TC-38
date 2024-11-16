@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Viagens</title>
+</head>
+<body>
+    <h1> SOBRE NÓS | DESTINOS | BLOG | FALE CONOSCO</h1>
+    <img src="/img_mar.jpg">
+    <h1>Intercâmbio na Austrália</h1>
+        <p>A Austrália é um dos destinos mais populares para intercâmbios, oferecendo uma experiência única com sua cultura vibrante, paisagens deslumbrantes e instituições de ensino de alta qualidade. Neste guia, você encontrará informações essenciais sobre o país, o custo de vida, opções de estudo e dicas práticas para sua jornada. </p>
+    <h1>Por que escolher a Austrália? </h1>
+        <ul>
+            <li><strong>Educação de alta qualidade:</strong> Universidades australianas estão entre as melhores do mundo. </li>
+            <li><strong>Diversidade cultural:</strong> A Austrália é um caldeirão de culturas, o que proporciona um ambiente acolhedor e enriquecedor. </li>
+            <li><strong>Belezas naturais:</strong> De praias a montanhas, a Austrália oferece paisagens incríveis para explorar. </li> 
+        </ul>
+    <h1>Sistema Educacional</h1>
+        <ul>
+            <li><strong>Universidades e Faculdades:</strong> A Austrália tem 43 universidades, muitas delas classificadas entre as melhores do mundo.</li>
+            <li><strong>Cursos oferecidos:</strong> A variedade de cursos vai desde artes até ciências aplicadas, com opções de intercâmbio de curto e longo prazo. </li>
+            <li><strong>Visto de estudante:</strong> Os estudantes internacionais devem obter um visto de estudante, que permite o trabalho em meio período durante os estudos. </li>
+        </ul> 
+    <h1>Custo de Vida</h1>
+        <p> O custo de vida na Austrália pode variar dependendo da cidade, mas aqui está uma média de gastos mensais: </p>   
+        <br>
+        <div class="table">
+            <table width="20%" border="1" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>DESPESA</th>
+                        <th>CUSTO MÉDIO (AUD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acomodação</td>
+                        <td>1.200 - 2.500</td>
+                    </tr>
+                    <tr>  
+                        <td>Alimentação</td>
+                        <td>300 - 600</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte</td>
+                        <td>100 - 200</td>
+                    </tr>
+                    <tr>
+                        <td>Internet e telefone</td>
+                        <td>60 - 100</td>
+                    </tr>
+                    <tr>
+                        <td>Lazer e entretenimento</td>
+                        <td>100 - 300</td>
+                    </tr>                        
+                </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><strong>TOTAL ESTIMADO</strong></td>
+                            <td><strong>1.860 - 3.700</strong></td>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>    
+    <h1>Principais Cidades para Estudar</h1>
+        <ol>
+            <li><strong>Sydney:</strong> Conhecida por sua icônica Opera House e praias deslumbrantes. É uma cidade multicultural com muitas opções de cursos. </li>
+            <li><strong>Melbourne:</strong> Considerada a capital cultural da Austrália, com uma cena artística vibrante e excelente gastronomia. </li>
+            <li><strong>Brisbane:</strong> Oferece um clima tropical e é mais acessível em termos de custo de vida. </li>
+            <li><strong>Perth:</strong>Conhecida pela sua qualidade de vida e belas praias, é uma excelente opção para quem busca tranquilidade. </li>
+            <li><strong>Adelaide:</strong>Uma cidade menor, conhecida por sua cultura e festivais, com um custo de vida mais baixo. </li>
+        </ol>
+    <h1>Dicas Práticas </h1>
+        <ul>
+            <li><strong>Seguro Saúde:</strong>É obrigatório ter um seguro saúde durante sua estadia. O Medicare é o sistema de saúde australiano, mas apenas residentes permanentes têm acesso.</li>
+            <li><strong>Transporte:</strong>As cidades têm sistemas de transporte público eficientes. Considere obter um cartão de transporte recarregável. </li>
+            <li><strong>Cultura e Etiqueta:</strong>Os australianos são conhecidos por serem amigáveis e informais. É comum usar a primeira pessoa e manter um tom casual nas interações.</li>        
+        </ul>
+        <p>Intercambiar na Austrália pode ser uma das melhores experiências da sua vida. Com sua educação de alta qualidade, diversidade cultural e lindas paisagens, você certamente encontrará um lugar para se sentir em casa. </p>
+    <h1>Perguntas Frequentes</h1>
+        <ul>
+            <li><strong>Qual é a duração dos cursos?</strong> <br>A duração varia, geralmente de 6 meses a 4 anos, dependendo do curso e nível de estudo.</li>
+            <br>
+            <li><strong>Posso trabalhar enquanto estudo?</strong> <br>Sim, com o visto de estudante você pode trabalhar até 40 horas quinzenais durante o período letivo.</li>
+            <br>
+            <li><strong>Como é o clima na Austrália</strong> <br>O clima varia de região para região. No geral, o verão vai de dezembro a fevereiro e o inverno de junho a agosto.</li>        
+        </ul>    
+</body>
+</html>
