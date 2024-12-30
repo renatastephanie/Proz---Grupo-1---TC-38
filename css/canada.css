@@ -49,12 +49,16 @@ main, section {
     background-color: #DAD7CD;
 }
 
-.study-in-canada img {
+#study-in-canada-images, #education-system-images {
+    display: flex;
+    justify-content: center;
+}
+
+#study-in-canada-images img, #education-system-images img {
     border-radius: 20px;
     border: 0.5px solid #0303036e;
-    width: 30rem;
-    display: block;
-    margin: 0 auto;
+    width: 30em;
+    margin: 30px;
 }
 
 .section-title {
@@ -67,12 +71,22 @@ main, section {
     padding-bottom: 20px;
 }
 
+.list-item, .faq li {
+    line-height: 1.8rem;
+    list-style-position: inside;
+}
+
+.faq-question {
+    display: inline-block;
+}
+
 table, td, th{
     border: 1px solid black;
 }
 
-td {
+td, th {
     padding: 5px;
+    text-align: center;
 }
 
 /* Footer */
