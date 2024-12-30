@@ -1,0 +1,92 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, ol, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DAD7CD; /* Cor de fundo bege clarinho */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Centralizar as imagens */
+img {
+    display: block;
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3a5f3a; /* Verde próximo ao design enviado */
+    color: #DAD7CD;
+    padding: 0.01%; /* Reduzindo ainda mais a altura */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Estilo para o título específico */
+.verde {
+    color: #3a5f3a; /* Verde */
+}
+
+
+/* Navegação */
+nav {
+    background-color: #2e4e2e; /* Verde mais escuro para contraste */
+    padding: 2px; /* Reduzindo a altura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #DAD7CD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções principais */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2, section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #3a5f3a; /* Aplicando o mesmo tom de verde */
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3a5f3a; /* Verde igual ao cabeçalho */
+    color: #DAD7CD;
+    text-align: center;
+    padding: 5px; /* Reduzindo ainda mais a altura */
+}
