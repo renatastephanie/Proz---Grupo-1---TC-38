@@ -1,0 +1,145 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, ol, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DAD7CD; /* Cor de fundo bege clarinho */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Centralizar as imagens */
+img {
+    display: block;
+    border-radius: 20px;
+    border: 0.5px solid #0303036e;
+    width: 100%;
+    max-width: 30em;
+    margin: 30px auto; /* Centraliza as imagens */
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #588157; /* Verde próximo ao design enviado */
+    padding: 10px 20px;
+    height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+header a img {
+    height: 50px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d9d9d9;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    color: #3a5f3a; /* Verde */
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+main ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #3a5f3a;
+}
+
+main ul li {
+    margin-bottom: 5px;
+}
+
+main .negrito {
+    font-weight: bold;
+    color: #3a5f3a;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3a5f3a; /* Verde escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 60px;
+    border-radius: 5px;
+}
+
+.footer-social ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-social ul li {
+    margin: 0 10px;
+}
+
+.footer-social ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #d9d9d9;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-rights {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
