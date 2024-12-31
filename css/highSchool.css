@@ -16,6 +16,10 @@ body {
 /* Centralizar as imagens */
 img {
     display: block;
+    border-radius: 20px;
+    border: 0.5px solid #0303036e;
+    width: 30em;
+    margin: 30px;
     margin: 0 auto; /* Centraliza as imagens */
 }
 
@@ -36,31 +40,41 @@ header h1 {
     color: #3a5f3a; /* Verde */
 }
 
-
 /* Navegação */
-nav {
-    background-color: #2e4e2e; /* Verde mais escuro para contraste */
-    padding: 2px; /* Reduzindo a altura */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #588157;
+    padding: 10px 20px;
+    height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 4rem;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-right: 5px;
 }
 
 nav ul li a {
-    color: #DAD7CD;
     text-decoration: none;
+    color: white;
     font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #d9d9d9;
 }
 
 /* Seções principais */
@@ -84,9 +98,41 @@ section p {
 }
 
 /* Rodapé */
-footer {
-    background-color: #3a5f3a; /* Verde igual ao cabeçalho */
-    color: #DAD7CD;
-    text-align: center;
-    padding: 5px; /* Reduzindo ainda mais a altura */
-}
+footer
+    .footer-newsletter {
+        background-color: #588157;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        height: 150px;
+    }
+    
+    #footer-newsletter-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #footer-newsletter-input-name input, #footer-newsletter-input-email input{
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        outline: none;
+        font-size: 0.8rem;
+        color: white;
+        width: 300px;
+    }
+    
+    #footer-newsletter-input-name input::placeholder, #footer-newsletter-input-email input::placeholder{
+        color: white;
+        font-size: 0.8rem;
+    }
+    
+    #footer-newsletter-input-email {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 48px;
+    }
