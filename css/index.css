@@ -169,6 +169,96 @@ nav ul li a:hover {
     background-color: #344E41;
 }
 
+/* Blog */
+#blog-container {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+#blog-container a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+#blog-container a:hover {
+    color: #344E41;
+}
+
+#blog-container-1, #blog-container-child-1, #blog-container-child-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+
+#blog-container-1, #blog-container-2 {
+    width: 40%;
+}
+
+#blog-container-1 img {
+    border-radius: 10px;
+    width: 60%;
+}
+
+#blog-container-1 h3 { 
+    color: #344E41;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    width: 60%;
+}
+
+#blog-container-1 p { 
+    font-size: 1.3rem;
+    margin-top: 15px;
+    font-weight: lighter;
+    width: 60%;
+}
+
+#blog-container-2 img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+#blog-container-2 h3 { 
+    color: #344E41;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    width: 50%;
+}
+
+#blog-container-2 p { 
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    width: 50%;
+}
+
+/* Dúvidas */
+#duvidas-container {
+    background-color: #DAD7CD;
+    padding: 50px;
+}
+
+#duvidas-container h2 {
+    font-size: 2rem;
+    color: #344E41;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#duvidas-container h3, #duvidas-container p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+
 
 /* Footer */
 .footer-newsletter {
