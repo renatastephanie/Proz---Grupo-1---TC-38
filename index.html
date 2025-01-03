@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo!</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="icon" type="image/png" href="Imagens/logo_png.png"/>
 </head>
 
@@ -166,27 +166,27 @@
         </section>
 
         <!-- Formulário -->
-        <section id="faleConosco">
+        <section id="fale-conosco">
             <form action="#" method="post">
                 <fieldset>
-                    <legend>Fale conosco!</legend>
-                    <div>
-                        <input type="text" name="nome" id="nome" placeholder="Nome:" required />
+                    <h2>Fale com a gente!</h2>
+                    <div class="input-form">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
                     </div>
-                    <div>
+                    <div class="input-form">
                         <input type="email" name="email" id="email" placeholder="E-mail" required />
                     </div>
-                    <div>
+                    <div class="input-form">
                         <input type="phone" name="telefone" id="telefone" placeholder="Telefone" required />
                     </div>
-                    <div>
-                        <select name="agencia" id="agencia">
+                    <div class="select-form">
+                        <select name="agencia" id="agencia-form">
                             <option value="" disabled selected>Escolha a sua agência</option>
                             <option value="agencia">Agência</option>
                         </select>
                     </div>
-                    <div>
-                        <select name="destino" id="destino">
+                    <div class="select-form">
+                        <select name="destino" id="destino-form">
                             <option value="" disabled selected>Escolha o seu destino</option>
                             <option value="Estados Unidos">Estados Unidos</option>
                             <option value="Inglaterra">Inglaterra</option>
@@ -194,8 +194,34 @@
                             <option value="Austrália">Austrália</option>
                         </select>
                     </div>
-                    <div>
-                        <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                    <div class="radio-form">
+                        <h4>Objetivo do Intercâmbio</h4>
+                        <input type="radio" name="objetivo" id="estudar" value="estudar">
+                        <label for="estudar">Estudar</label>
+                        <input type="radio" name="objetivo" id="trabalhar" value="trabalhar">
+                        <label for="trabalhar">Trabalhar</label>
+                        <input type="radio" name="objetivo" id="estudar-trabalhar" value="estudar-trabalhar">
+                        <label for="estudar-trabalhar">Estudar e Trabalhar</label>
+                    </div>
+                    <div class="radio-form">
+                        <h4>Quando gostaria de ir?</h4>
+                        <input type="radio" name="tempo" id="3meses" value="3meses">
+                        <label for="3meses">Em até 3 meses</label>
+                        <input type="radio" name="tempo" id="6meses" value="6meses">
+                        <label for="6meses">Em até 6 meses</label>
+                        <input type="radio" name="tempo" id="12meses" value="12meses">
+                        <label for="12meses">Em até 12 meses</label>
+                        <input type="radio" name="tempo" id="indefinido" value="indefinido">
+                        <label for="indefinido">Indefinido</label>
+                    </div>
+                    <div class="radio-form">
+                        <h4>Valor disponível para investimento (R$)</h4>
+                        <input type="radio" name="valor" id="10mil" value="10mil">
+                        <label for="10mil">Até 10 mil</label>
+                        <input type="radio" name="valor" id="1020mil" value="1020mil">
+                        <label for="1020mil">De 10 mil a 20 mil</label>
+                        <input type="radio" name="valor" id="20mil" value="20mil">
+                        <label for="20mil">Acima de 20 mil</label>
                     </div>
                 </fieldset>
             </form>
