@@ -257,3 +257,10 @@ main section p {
 .footer-rights small {
     padding-left: 20px;
 }
+
+.work-study {
+    border-radius: 20px;
+    border: 0.5px solid #0303036e;
+    width: 30em;
+    margin: 30px;
+}
