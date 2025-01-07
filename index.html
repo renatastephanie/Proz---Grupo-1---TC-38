@@ -19,9 +19,9 @@
         <nav>
             <ul>
                 <li><a href="about.html">Sobre nós |</a></li>
-                <li><a href="australia.html">Destinos |</a></li>
-                <li><a href="blog-one.html">Blog |</a></li>
-                <li><a href="contacts.html">Fale conosco</a></li>
+                <li><a href="#destino">Destinos |</a></li>
+                <li><a href="#blog">Blog |</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -80,10 +80,10 @@
         </section>
 
         <!-- Carrossel -->
-        <section>
-            <h2>Destinos</h2>
-            <div>
-                <div>
+        <section id="destino" class="carrossel">
+            <img class="destino" src="Imagens/destino.png" alt="destino">
+            <div class="container">
+                <div class="card">
                     <img src="Imagens/Austrália.jpeg" alt="Imagem 1">
                     <h3>Austrália</h3>
                     <p>Fazer um intercâmbio na Austrália é poder desfrutar de paisagens inacreditáveis, praias maravilhosas, um clima parecido ao nosso e peculiaridades que tornam a estada ainda mais agradável.</p>
@@ -91,7 +91,7 @@
                         <button>SAIBA MAIS</button>
                     </a>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Imagens/Canadá.jpeg" alt="Imagem 2">
                     <h3>Canadá</h3>
                     <p>Como não considerar um intercâmbio em um país completo? Tem neve, praia, inglês, francês, moradores hospitaleiros e paisagens de cinema.</p>
@@ -99,7 +99,7 @@
                         <button>SAIBA MAIS</button>
                     </a>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Imagens/EUA.jpg" alt="Imagem 3">
                     <h3>Estados Unidos</h3>
                     <p>Em um país com dimensões continentais, nada mais natural do que encontrar uma diversidade enorme de paisagens, culturas e mais.</p>
@@ -107,7 +107,7 @@
                         <button>SAIBA MAIS</button>
                     </a>
                 </div>
-                <div>
+                <div class="card">
                     <img src="Imagens/Espanha.jpg" alt="Imagem 4">
                     <h3>Espanha</h3>
                     <p>Fazer um intercâmbio na Espanha é explorar uma rica cultura, com cidades vibrantes como Madrid e Barcelona.</p>
@@ -115,12 +115,12 @@
                         <button>SAIBA MAIS</button>
                     </a>
                 </div>
-            <button type="button">Anterior</button>
-            <button type="button">Próximo</button>
+            </div>
         </section>
+        
 
         <!-- Blog -->
-        <section>
+        <section id="blog">
             <div id="blog-container">
                 <div id="blog-container-1">
                     <img src="Imagens/img_amigos_blog.jpg" alt="Imagem Intercâmbio Educacional">
@@ -142,6 +142,7 @@
                     </div>
                 </div> 
             </div>
+
         </section>
 
         <!-- Dúvidas -->
@@ -177,9 +178,6 @@
                         <input type="email" name="email" id="email" placeholder="E-mail" required />
                     </div>
                     <div class="input-form">
-                        <input type="phone" name="telefone" id="telefone" placeholder="Telefone" required />
-                    </div>
-                    <div class="select-form">
                         <select name="agencia" id="agencia-form">
                             <option value="" disabled selected>Escolha a sua agência</option>
                             <option value="agencia">Agência</option>
@@ -225,6 +223,9 @@
                     </div>
                 </fieldset>
             </form>
+            <div class="imagem-form">
+                <img class="" src="Imagens/f.png" alt="">
+            </div>
         </section>
     </main>
 

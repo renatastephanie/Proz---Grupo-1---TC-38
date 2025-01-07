@@ -6,24 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #DAD7CD; /* Cor de fundo bege clarinho */
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Centralizar as imagens */
-main img {
-    display: block;
-    border-radius: 20px;
-    border: 0.5px solid #0303036e;
-    width: 30em;
-    margin: 30px;
-    margin: 0 auto; /* Centraliza as imagens */
-}
-
 /* Nav */ 
 
 header {
@@ -63,27 +45,54 @@ header {
     color: #d9d9d9;
   }
   
-/* Seções principais */
-main {
-    padding: 20px;
+
+/* Conteúdo principal */
+main, section {
+    padding: 20px ;
+    background-color: #DAD7CD;
 }
 
-main section {
+#study-in-usa-images, #education-system-images {
+    display: flex;
+    justify-content: center;
+}
+
+#study-in-usa-images img, #education-system-images img {
+    border-radius: 20px;
+    border: 0.5px solid #0303036e;
+    width: 30em;
+    margin: 30px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: #3A5A40;
     margin-bottom: 20px;
 }
 
-main section h2, main section h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #3a5f3a; /* Aplicando o mesmo tom de verde */
+.section-paragraph, .faq-answer {
+    padding-bottom: 20px;
 }
 
-main section p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.list-item, .faq li {
+    line-height: 1.8rem;
+    list-style-position: inside;
 }
 
-/* Rodapé */
+.faq-question {
+    display: inline-block;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Footer */
 .footer-newsletter {
     background-color: #588157;
     display: flex;
@@ -205,8 +214,6 @@ main section p {
 
 .footer-rights {
     display: flex;
-    margin-top: 20px;
-    padding: 20px;
     align-items: center;
     justify-content: center;
     background-color: #344E41;
