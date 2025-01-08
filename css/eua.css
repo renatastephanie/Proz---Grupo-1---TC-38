@@ -7,7 +7,6 @@
 }
 
 /* Nav */
-
 header {
   display: flex;
   align-items: center;
@@ -52,13 +51,13 @@ section {
   background-color: #dad7cd;
 }
 
-#study-in-canada-images,
+#study-in-usa-images,
 #education-system-images {
   display: flex;
   justify-content: center;
 }
 
-#study-in-canada-images img,
+#study-in-usa-images img,
 #education-system-images img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
