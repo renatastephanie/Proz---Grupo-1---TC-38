@@ -606,3 +606,62 @@ nav ul li a:hover {
 .footer-rights small {
   padding-left: 20px;
 }
+
+@media screen and (max-width: 1565px) {
+  footer,
+  button, #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  footer,
+  button, #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  nav ul li {
+    font-size: 0.5rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.2rem;
+  }
+}
