@@ -1,208 +1,250 @@
 /* Reset básico */
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Nav */
-#main-header {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #588157;
-    padding: 10px 20px;
-    height: 70px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-          
-    
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #588157;
+  padding: 10px 20px;
+  height: 120px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para o logo */
-#ab-img1 {
-   
-     
-    width: 4rem;  
-      
-                      
+html {
+  scroll-behavior: smooth;
 }
-/*--------------------*/
 
+.logo img {
+  width: 8rem;
+}
 
-/* Estilo para a lista de navegação */
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
 
 nav ul li {
-    margin-left: 6px;
+  margin-right: 5px;
+  font-size: 30px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-main .negrito {
-    font-weight: bold;
-    color: #3a5f3a;
-    font-size: 1.2rem;
-} /*aqui
+nav ul li a:hover {
+  color: #d9d9d9;
+}
 
 /* imagem de fundo */
 #main {
-    background-color: 5881; 
-    height: 100vh; 
-    width: 100%; 
-    
+  background-color: 5881;
+  height: 100vh;
+  width: 100%;
+  background-color: #DAD7CD;
 }
 
+#a1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-
-/*img 1*/
 #img {
-   
-    width: auto; 
-    height: auto; 
-    display: block;
-    margin: 0 auto;
-
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 #i2 {
-   
-    width: 800px; 
-    height: 250px; 
-    
-    display: block;
-    margin: 0 auto;
-    color: #3a5f3a;
-
+  width: 30%;
+  height: 30vh;
+  display: block;
+  margin: 0 auto;
+  color: #3a5f3a;
 }
 
-
-
-h1, h2 {
-    text-align: center; 
-    color: #333; 
-    color: #1a571a;
-
+main h1 {
+  text-align: center;
+  color: #1a571a;
 }
 
-
-p {
-    padding: 10px 20px; 
+#plano-estudos p {
+    text-align: center;
 }
 
-
-/*img i3 -------------------*/
-
-/*fita verde*/
-#faixa {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #588157;
-    padding: 10px 20px;
-    height: 70px;
-    
-    
+main h2 {
+  color: #1a571a;
+  padding: 10px 10px;
 }
 
-
-
-#img4 {
-   
-    width: 900px; 
-    height: auto; 
-    display: block;
-    margin: 0px;
-    padding: 10px 0px;
-    
+main p {
+  padding: 10px 10px;
+  text-align: left;
 }
 
-/*--------------------------- redes -----------*/
+/* Footer */
+.footer-newsletter {
+  background-color: #588157;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  height: 15vh;
+}
 
+#footer-newsletter-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
-#social-links, #social-links ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 30px;
+#footer-newsletter-input-name input,
+#footer-newsletter-input-email input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  font-size: 0.8rem;
+  color: white;
+  width: 15vw;
+}
+
+#footer-newsletter-input-name input::placeholder,
+#footer-newsletter-input-email input::placeholder {
+  color: white;
+  font-size: 0.8rem;
+}
+
+#footer-newsletter-input-email {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+#footer-newsletter-input-email button {
+  width: 25%;
+  height: 3vh;
+  margin-top: 10px;
+  background-color: #344e41;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: color 2s ease;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+#footer-newsletter-input-email button:hover {
+  background-color: #2a4b30;
+}
+
+#social-links {
+  background-color: #d9d9d9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#social-links,
+#social-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 30px;
 }
 
 #social-links h5 {
-    color: #344E41;
-    font-size: 15px;
+  color: #344e41;
+  font-size: 15px;
 }
 
 #social-links ul li {
-    padding-right: 20px;
-    display: flex;
+  padding-right: 20px;
+  display: flex;
 }
 
 #social-links ul li img {
-    width: 25px;
+  width: 1.2vw;
 }
 
 #social-links ul li a {
-    text-decoration: none;
-    color: #344E41;
-    padding-left: 5px;
+  text-decoration: none;
+  color: #344e41;
+  padding-left: 5px;
 }
 
 .footer-links {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #dad7cd;
 }
 
 #footer-links-img img {
-    width: 350px;
+  width: 70%;
+  padding-bottom: 20px;
 }
 
-#footer-links-institucional, #footer-links-estudar, #footer-links-trabalhar, #footer-links-idiomas {
-    padding-left: 50px;
+#footer-links-institucional,
+#footer-links-estudar,
+#footer-links-trabalhar,
+#footer-links-idiomas {
+  padding-left: 50px;
 }
 
-#footer-links-institucional h4, #footer-links-estudar h4, #footer-links-trabalhar h4, #footer-links-idiomas h4 {
-    color: #588157;
-    text-transform: uppercase;
-    padding-bottom: 10px;
+#footer-links-institucional h4,
+#footer-links-estudar h4,
+#footer-links-trabalhar h4,
+#footer-links-idiomas h4 {
+  color: #588157;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
-#footer-links-institucional ul li, #footer-links-estudar ul li, #footer-links-trabalhar ul li, #footer-links-idiomas ul li {
-    list-style: none;
-    font-weight: lighter;
+#footer-links-institucional ul li,
+#footer-links-estudar ul li,
+#footer-links-trabalhar ul li,
+#footer-links-idiomas ul li {
+  list-style: none;
+  font-weight: lighter;
 }
 
-#footer-links-institucional ul li a, #footer-links-estudar ul li a, #footer-links-trabalhar ul li a, #footer-links-idiomas ul li a  {
-    text-decoration: none;
-    color: black;
+#footer-links-institucional ul li a,
+#footer-links-estudar ul li a,
+#footer-links-trabalhar ul li a,
+#footer-links-idiomas ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .footer-rights {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #344E41;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #344e41;
+  color: white;
+  padding: 20px;
 }
 
 .footer-rights img {
-    width: 50px;
+  width: 2%;
 }
 
 .footer-rights small {
-    padding-left: 20px;
+  padding-left: 20px;
 }

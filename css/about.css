@@ -1,201 +1,258 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
 /* Define o estilo para o header */
 body {
-    margin: 0; 
-    padding: 0; 
-    background: #f3f1ed;
-    
+  margin: 0;
+  padding: 0;
+  background-color: #DAD7CD;
 }
 
-/*cabesalho */
-
-
-#main-header {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #588157;
-    padding: 10px 20px;
-    height: 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-          
-    
+/*cabeçalho */
+/* Nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #588157;
+  padding: 10px 20px;
+  height: 120px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para o logo */
-#ab-img1 {
-    width: 10px;
-    height: auto;
-    padding-left: 30px;  
-    width: 4rem;                       
+html {
+  scroll-behavior: smooth;
 }
-/*--------------------*/
 
+.logo img {
+  width: 8rem;
+}
 
-/* Estilo para a lista de navegação */
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
 
 nav ul li {
-    margin-right: 5px;
+  margin-right: 5px;
+  font-size: 30px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-/*ate aqui-*/
+nav ul li a:hover {
+  color: #d9d9d9;
+}
+
 /* Estilo para o banner */
 .banner img {
-    width: 100%;                     
-    height: auto;                        
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  width: 20%;
+  height: auto;
 }
 /*--------------------------------- nossa misão ----------------------------------------*/
 
-
 /* apartir do  sobre nós*/
 main {
-    padding: 40px;
+  padding: 40px;
 }
 
-h2, h3 {
-    color:  #344E41;
+h2,
+h3 {
+  color: #344e41;
 }
 
 #h3 {
-    color:  #344E41;
-    text-align: center;
+  color: #344e41;
+  text-align: center;
 }
-
 
 /*---------------------------------logos do  final--------------------*/
 #divImg {
-    display: flex;                
-    justify-content: center;      
-    align-items: center;         
-    gap: 20px;                    
-    flex-wrap: nowrap;           
-    padding: 20px;                
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  padding: 20px;
 }
 
 #divImg img {
-    display: block;               
-    width: 150px;                
-    height: auto;                 
-    border-radius: 10px;          
-    border: 3px solid #333;       
-    transition: transform 0.3s ease;
-    margin: 0;                  
-   
+  display: block;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #333;
+  transition: transform 0.3s ease;
+  margin: 0;
 }
 
 /* Efeito de aumentar a imagem ao passar o mouse */
 #divImg img:hover {
-    transform: scale(1.1);        
+  transform: scale(1.1);
 }
 
-/*--------footer----------------------------*/
-
+/* Footer */
 .footer-newsletter {
-    background-color: #588157;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    height: 150px;
+  background-color: #588157;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  height: 15vh;
 }
 
 #footer-newsletter-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
-#footer-newsletter-input-name input, #footer-newsletter-input-email input{
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: transparent;
-    outline: none;
-    font-size: 0.8rem;
-    color: white;
-    width: 300px;
+#footer-newsletter-input-name input,
+#footer-newsletter-input-email input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  font-size: 0.8rem;
+  color: white;
+  width: 15vw;
 }
 
-#footer-newsletter-input-name input::placeholder, #footer-newsletter-input-email input::placeholder{
-    color: white;
-    font-size: 0.8rem;
+#footer-newsletter-input-name input::placeholder,
+#footer-newsletter-input-email input::placeholder {
+  color: white;
+  font-size: 0.8rem;
 }
 
 #footer-newsletter-input-email {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 48px;
 }
 
 #footer-newsletter-input-email button {
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    background-color: #344E41;
-    outline: none;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    transition: color 2s ease;
-    cursor: pointer;
-    align-self: flex-end;
+  width: 25%;
+  height: 3vh;
+  margin-top: 10px;
+  background-color: #344e41;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: color 2s ease;
+  cursor: pointer;
+  align-self: flex-end;
 }
 
 #footer-newsletter-input-email button:hover {
-    background-color: #2A4B30;
+  background-color: #2a4b30;
 }
 
 #social-links {
-    background-color: #D9D9D9;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #d9d9d9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#social-links, #social-links ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 30px;
+#social-links,
+#social-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 30px;
 }
 
 #social-links h5 {
-    color: #344E41;
-    font-size: 15px;
+  color: #344e41;
+  font-size: 15px;
 }
 
-#cor-letras {
-    color: #344E41;
+#social-links ul li {
+  padding-right: 20px;
+  display: flex;
 }
-/*--------- final  do  site, logo C --------------------------*/
+
+#social-links ul li img {
+  width: 1.2vw;
+}
+
+#social-links ul li a {
+  text-decoration: none;
+  color: #344e41;
+  padding-left: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #dad7cd;
+}
+
+#footer-links-img img {
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+#footer-links-institucional,
+#footer-links-estudar,
+#footer-links-trabalhar,
+#footer-links-idiomas {
+  padding-left: 50px;
+}
+
+#footer-links-institucional h4,
+#footer-links-estudar h4,
+#footer-links-trabalhar h4,
+#footer-links-idiomas h4 {
+  color: #588157;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#footer-links-institucional ul li,
+#footer-links-estudar ul li,
+#footer-links-trabalhar ul li,
+#footer-links-idiomas ul li {
+  list-style: none;
+  font-weight: lighter;
+}
+
+#footer-links-institucional ul li a,
+#footer-links-estudar ul li a,
+#footer-links-trabalhar ul li a,
+#footer-links-idiomas ul li a {
+  text-decoration: none;
+  color: black;
+}
 
 .footer-rights {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #344E41;
-    color: white;
-    padding: 20px;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #344e41;
+  color: white;
+  padding: 20px;
 }
+
 .footer-rights img {
-    width: 50px;
+  width: 2%;
 }
 
 .footer-rights small {
-    padding-left: 20px;
+  padding-left: 20px;
 }
