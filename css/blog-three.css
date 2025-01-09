@@ -1,38 +1,45 @@
-/* Define o estilo para o header */
-body {
-    margin: 0; 
-    padding: 0; 
-    background: #f3f1ed;
-    
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
-/*cabesalho */
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DAD7CD; /* Cor de fundo bege clarinho */
+    color: #333;
+    line-height: 1.6;
+}
 
+/* Centralizar as imagens */
+main img {
+    display: block;
+    border-radius: 20px;
+    border: 0.5px solid #0303036e;
+    width: 100%;
+    max-width: 30em;
+    margin: 30px auto;
+}
 
-#main-header {
-    
+/* Cabeçalho */
+/* Nav */
+header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: #588157;
     padding: 10px 20px;
-    height: 60px;
+    height: 70px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-          
-    
 }
 
-/* Estilo para o logo */
-#ab-img1 {
-    width: 10px;
-    height: auto;
-    padding-left: 30px;  
-    width: 4rem;                       
+.logo img {
+    width: 4rem;
 }
-/*--------------------*/
 
-
-/* Estilo para a lista de navegação */
 nav ul {
     display: flex;
     list-style: none;
@@ -51,59 +58,44 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/*ate aqui-*/
-/* Estilo para o banner */
-.banner img {
-    width: 100%;                     
-    height: auto;                        
+nav ul li a:hover {
+    color: #d9d9d9;
 }
-/*--------------------------------- nossa misão ----------------------------------------*/
 
-
-/* apartir do  sobre nós*/
+/* Conteúdo principal */
 main {
-    padding: 40px;
+    padding: 20px;
 }
 
-h2, h3 {
-    color:  #344E41;
+main h4 {
+    font-size: 1.5rem;
+    color: #3a5f3a; /* Verde */
+    margin-bottom: 10px;
 }
 
-#h3 {
-    color:  #344E41;
-    text-align: center;
+main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
-
-/*---------------------------------logos do  final--------------------*/
-#divImg {
-    display: flex;                
-    justify-content: center;      
-    align-items: center;         
-    gap: 20px;                    
-    flex-wrap: nowrap;           
-    padding: 20px;                
-    
+main ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #3a5f3a;
 }
 
-#divImg img {
-    display: block;               
-    width: 150px;                
-    height: auto;                 
-    border-radius: 10px;          
-    border: 3px solid #333;       
-    transition: transform 0.3s ease;
-    margin: 0;                  
-   
+main ul li {
+    margin-bottom: 5px;
 }
 
-/* Efeito de aumentar a imagem ao passar o mouse */
-#divImg img:hover {
-    transform: scale(1.1);        
+main .negrito {
+    font-weight: bold;
+    color: #3a5f3a;
+    font-size: 1.2rem;
 }
 
-/*--------footer----------------------------*/
-
+/* Rodapé */
+/* Footer */
 .footer-newsletter {
     background-color: #588157;
     display: flex;
@@ -178,10 +170,50 @@ h2, h3 {
     font-size: 15px;
 }
 
-#cor-letras {
-    color: #344E41;
+#social-links ul li {
+    padding-right: 20px;
+    display: flex;
 }
-/*--------- final  do  site, logo C --------------------------*/
+
+#social-links ul li img {
+    width: 25px;
+}
+
+#social-links ul li a {
+    text-decoration: none;
+    color: #344E41;
+    padding-left: 5px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#footer-links-img img {
+    width: 350px;
+}
+
+#footer-links-institucional, #footer-links-estudar, #footer-links-trabalhar, #footer-links-idiomas {
+    padding-left: 50px;
+}
+
+#footer-links-institucional h4, #footer-links-estudar h4, #footer-links-trabalhar h4, #footer-links-idiomas h4 {
+    color: #588157;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#footer-links-institucional ul li, #footer-links-estudar ul li, #footer-links-trabalhar ul li, #footer-links-idiomas ul li {
+    list-style: none;
+    font-weight: lighter;
+}
+
+#footer-links-institucional ul li a, #footer-links-estudar ul li a, #footer-links-trabalhar ul li a, #footer-links-idiomas ul li a  {
+    text-decoration: none;
+    color: black;
+}
 
 .footer-rights {
     display: flex;
@@ -190,8 +222,9 @@ h2, h3 {
     background-color: #344E41;
     color: white;
     padding: 20px;
-    
+    margin-top: 20px;
 }
+
 .footer-rights img {
     width: 50px;
 }
