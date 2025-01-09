@@ -40,7 +40,7 @@ header {
 }
 
 .logo img {
-  width: 8rem;
+  width: 6rem;
 }
 
 nav ul {
@@ -51,7 +51,7 @@ nav ul {
 
 nav ul li {
   margin-right: 5px;
-  font-size: 30px;
+  font-size: 1.2rem;
 }
 
 nav ul li a {

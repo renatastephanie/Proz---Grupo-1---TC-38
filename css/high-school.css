@@ -19,7 +19,7 @@ main img {
   display: block;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
-  border-radius: 8px;  
+  border-radius: 8px;
   width: 30em;
   margin: 30px;
   margin: 0 auto; /* Centraliza as imagens */
@@ -37,7 +37,7 @@ header {
 }
 
 .logo img {
-  width: 8rem;
+  width: 6rem;
 }
 
 nav ul {
@@ -48,7 +48,7 @@ nav ul {
 
 nav ul li {
   margin-right: 5px;
-  font-size: 30px;
+  font-size: 1.2rem;
 }
 
 nav ul li a {
