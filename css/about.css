@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #DAD7CD;
+  background-color: #dad7cd;
 }
 
 /*cabeçalho */
@@ -61,9 +61,7 @@ nav ul li a:hover {
   width: 20%;
   height: auto;
 }
-/*--------------------------------- nossa misão ----------------------------------------*/
 
-/* apartir do  sobre nós*/
 main {
   padding: 40px;
 }
@@ -78,7 +76,6 @@ h3 {
   text-align: center;
 }
 
-/*---------------------------------logos do  final--------------------*/
 #divImg {
   display: flex;
   justify-content: center;
@@ -98,7 +95,6 @@ h3 {
   margin: 0;
 }
 
-/* Efeito de aumentar a imagem ao passar o mouse */
 #divImg img:hover {
   transform: scale(1.1);
 }
@@ -111,6 +107,14 @@ h3 {
   align-items: center;
   color: white;
   height: 15vh;
+}
+
+.footer-newsletter h2 {
+  margin-bottom: 5px;
+}
+
+.footer-newsletter p {
+  margin-top: 5px;
 }
 
 #footer-newsletter-text {
@@ -255,4 +259,65 @@ h3 {
 
 .footer-rights small {
   padding-left: 20px;
+}
+
+@media screen and (max-width: 1565px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  nav ul li {
+    font-size: 0.5rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.2rem;
+  }
 }

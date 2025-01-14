@@ -76,6 +76,11 @@ nav ul li a:hover {
   color: #3a5f3a;
 }
 
+#texto-group1 {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
 main h1 {
   text-align: center;
   color: #1a571a;
@@ -87,16 +92,17 @@ main h1 {
 
 main h2 {
   color: #1a571a;
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 
 main p {
-  padding: 10px 10px;
+  padding: 10px 20px;
   text-align: left;
 }
 
 /* Footer */
 .footer-newsletter {
+  margin-top: 20px;
   background-color: #588157;
   display: flex;
   justify-content: space-evenly;

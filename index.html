@@ -1,305 +1,401 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bem-vindo!</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="icon" type="image/png" href="Imagens/logo_png.png"/>
-</head>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/index.js" defer></script>
+    <link rel="icon" type="image/png" href="Imagens/logo_png.png" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="Imagens/Logo.png" alt="Logo Group Agência">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">Sobre nós |</a></li>
-                <li><a href="#destino">Destinos |</a></li>
-                <li><a href="#blog">Blog |</a></li>
-                <li><a href="#fale-conosco">Fale conosco</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="Imagens/Logo.png" alt="Logo Group Agência" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="about.html">Sobre nós |</a></li>
+          <li><a href="#destino">Destinos |</a></li>
+          <li><a href="#blog">Blog |</a></li>
+          <li><a href="#fale-conosco">Fale conosco</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Banner -->
     <section class="banner">
-        <div id="banner-container-image">
-            <img src="Imagens/Banner.png" alt="Banner">
+      <div id="banner-container-image">
+        <img src="Imagens/Banner.png" alt="Banner" />
+      </div>
+      <div id="banner-container-text">
+        <div id="banner-container-title">
+          <h2>Não sabe para onde ir?</h2>
+          <h3>Descubra o destino para o seu intercâmbio</h3>
         </div>
-        <div id="banner-container-text">
-            <div id="banner-container-title">
-                <h2>Não sabe para onde ir?</h2>
-                <h3>Descubra o destino para o seu intercâmbio</h3>
-            </div>
-            <div class="banner-container-input">
-                <input type="text" placeholder="Digite o nome de um idioma, País ou Cidade">
-                <input type="text" placeholder="Escolha o tipo de intercâmbio">
-                <button>🔍</button>
-            </div>
+        <div class="banner-container-input">
+          <input
+            type="text"
+            placeholder="Digite o nome de um idioma, País ou Cidade"
+          />
+          <input type="text" placeholder="Escolha o tipo de intercâmbio" />
+          <button>🔍</button>
         </div>
+      </div>
     </section>
 
     <main>
-        <!-- Cards -->
-        <section class="cards-main">
-            <div>
-                <article>
-                    <h5>High School</h5>
-                    <p>Esse programa é feito para quem já está no Ensino Médio ou vai começá-lo em breve. Com o High School, você poderá estudar em um colégio em outro país durante um semestre, um ano letivo e/ou até o Ensino Médio completo. Tem opções tanto em escolas públicas quanto em particulares, todas com um ensino de alta qualidade.</p>
-                    <a href="high-school.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </article>
-                <article>
-                    <h5>Curso de Idiomas</h5>
-                    <p>Para quem precisa ativar o turbo no aprendizado de uma nova língua, sem dúvidas, a maneira mais rápida e eficaz é embarcar para estudar fora e vivenciar de perto a cultura do país de destino. Na GROUP1, você encontra cursos de inglês, espanhol, francês e alemão em instituições de ensino no mundo todo.</p>
-                    <a href="language-course.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </article>
-                <article>
-                    <h5>Work & Study</h5>
-                    <p>Para quem pretende ganhar experiência profissional no exterior enquanto estuda inglês ou espanhol, esse é o seu programa. Nele, você vai morar por um longo período fora e poderá estudar o idioma e, ao mesmo tempo, trabalhar na Austrália, Emirados Árabes, Espanha, Irlanda, Malta ou Nova Zelândia.</p>
-                    <a href="work-study.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </article>
-                <article>
-                    <h5>Summer Program</h5>
-                    <p>O Summer Program é uma oportunidade incrível para estudantes que desejam explorar novas culturas enquanto aprimoram suas habilidades acadêmicas e linguísticas. Este programa de intercâmbio oferece a chance de passar um verão em um país estrangeiro, participando de cursos intensivos, atividades extracurriculares e interações com estudantes locais.</p>
-                    <a href="summer-program.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </article>
-            </div>
-        </section>
+      <!-- Cards -->
+      <div id="cards-main">
+        <!-- Feito dinamicamente com JS-->
+      </div>
 
-        <!-- Carrossel -->
-        <section id="destino" class="carrossel">
-            <img class="destino" src="Imagens/destino.png" alt="destino">
-            <div class="container">
-                <div class="card">
-                    <img src="Imagens/Austrália.jpeg" alt="Imagem 1">
-                    <h3>Austrália</h3>
-                    <p>Fazer um intercâmbio na Austrália é poder desfrutar de paisagens inacreditáveis, praias maravilhosas, um clima parecido ao nosso e peculiaridades que tornam a estada ainda mais agradável.</p>
-                    <a href="australia.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="Imagens/Canadá.jpeg" alt="Imagem 2">
-                    <h3>Canadá</h3>
-                    <p>Como não considerar um intercâmbio em um país completo? Tem neve, praia, inglês, francês, moradores hospitaleiros e paisagens de cinema.</p>
-                    <a href="canada.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="Imagens/EUA.jpg" alt="Imagem 3">
-                    <h3>Estados Unidos</h3>
-                    <p>Em um país com dimensões continentais, nada mais natural do que encontrar uma diversidade enorme de paisagens, culturas e mais.</p>
-                    <a href="eua.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="Imagens/Espanha.jpg" alt="Imagem 4">
-                    <h3>Espanha</h3>
-                    <p>Fazer um intercâmbio na Espanha é explorar uma rica cultura, com cidades vibrantes como Madrid e Barcelona.</p>
-                    <a href="espanha.html" target="_blank">
-                        <button>SAIBA MAIS</button>
-                    </a>
-                </div>
-            </div>
-        </section>
-        
+      <!-- Carrossel -->
+      <section id="destino" class="carrossel">
+        <img class="destino" src="Imagens/destino.png" alt="destino" />
+        <div class="container">
+          <div class="card">
+            <img src="Imagens/Austrália.jpeg" alt="Imagem 1" />
+            <h3>Austrália</h3>
+            <p>
+              Fazer um intercâmbio na Austrália é poder desfrutar de paisagens
+              inacreditáveis, praias maravilhosas, um clima parecido ao nosso e
+              peculiaridades que tornam a estada ainda mais agradável.
+            </p>
+            <a href="australia.html" target="_blank">
+              <button>SAIBA MAIS</button>
+            </a>
+          </div>
+          <div class="card">
+            <img src="Imagens/Canadá.jpeg" alt="Imagem 2" />
+            <h3>Canadá</h3>
+            <p>
+              Como não considerar um intercâmbio em um país completo? Tem neve,
+              praia, inglês, francês, moradores hospitaleiros e paisagens de
+              cinema.
+            </p>
+            <a href="canada.html" target="_blank">
+              <button>SAIBA MAIS</button>
+            </a>
+          </div>
+          <div class="card">
+            <img src="Imagens/EUA.jpg" alt="Imagem 3" />
+            <h3>Estados Unidos</h3>
+            <p>
+              Em um país com dimensões continentais, nada mais natural do que
+              encontrar uma diversidade enorme de paisagens, culturas e mais.
+            </p>
+            <a href="eua.html" target="_blank">
+              <button>SAIBA MAIS</button>
+            </a>
+          </div>
+          <div class="card">
+            <img src="Imagens/Espanha.jpg" alt="Imagem 4" />
+            <h3>Espanha</h3>
+            <p>
+              Fazer um intercâmbio na Espanha é explorar uma rica cultura, com
+              cidades vibrantes como Madrid e Barcelona.
+            </p>
+            <a href="espanha.html" target="_blank">
+              <button>SAIBA MAIS</button>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Blog -->
-        <section id="blog">
-            <div id="blog-container">
-                <div id="blog-container-1">
-                    <img src="Imagens/img_amigos_blog.jpg" alt="Imagem Intercâmbio Educacional">
-                    <h3>INTERCÂMBIO EDUCACIONAL: O QUE É, COMO FAZER, DESTINOS E MAIS</h3>
-                    <p>Fazer um intercâmbio educacional possibilita que o seu entendimento cultural, profissional e pessoal seja expandido. Estudar no exterior, trabalhar em... 
-                        <a href="blog-one.html" target="_blank">Ver mais</a>
-                    </p>
-                </div>
-                <div id="blog-container-2">
-                    <div id="blog-container-child-1">
-                        <img src="Imagens/img_australia_blog.jpg" alt="Imagem Austrália">
-                        <h3>A Austrália é um país seguro? Tudo sobre a segurança na Austrália</h3>
-                        <p>A Austrália tem paisagens incríveis e qualidade de vida elevada, e a segurança é um ponto que atrai quem vai... <a href="blog-two.html" target="_blank">Ver mais</a></p>
-                    </div>
-                    <div id="blog-container-child-2">
-                        <img src="Imagens/img_inglaterra_blog.jpg" alt="Imagem Inglaterra">
-                        <h3>Por que escolher a Inglaterra para fazer intercâmbio?</h3>
-                        <p>Por que escolher a Inglaterra para estudar no exterior? Bom, existem vários motivos: qualidade de vida, ensino reconhecido mundialmente e... <a href="blog-three.html" target="_blank">Ver mais</a></p>
-                    </div>
-                </div> 
+      <!-- Blog -->
+      <section id="blog">
+        <div id="blog-container">
+          <div id="blog-container-1">
+            <img
+              src="Imagens/img_amigos_blog.jpg"
+              alt="Imagem Intercâmbio Educacional"
+            />
+            <h3>
+              INTERCÂMBIO EDUCACIONAL: O QUE É, COMO FAZER, DESTINOS E MAIS
+            </h3>
+            <p>
+              Fazer um intercâmbio educacional possibilita que o seu
+              entendimento cultural, profissional e pessoal seja expandido.
+              Estudar no exterior, trabalhar em...
+              <a href="blog-one.html" target="_blank">Ver mais</a>
+            </p>
+          </div>
+          <div id="blog-container-2">
+            <div id="blog-container-child-1">
+              <img
+                src="Imagens/img_australia_blog.jpg"
+                alt="Imagem Austrália"
+              />
+              <h3>
+                A Austrália é um país seguro? Tudo sobre a segurança na
+                Austrália
+              </h3>
+              <p>
+                A Austrália tem paisagens incríveis e qualidade de vida elevada,
+                e a segurança é um ponto que atrai quem vai...
+                <a href="blog-two.html" target="_blank">Ver mais</a>
+              </p>
             </div>
+            <div id="blog-container-child-2">
+              <img
+                src="Imagens/img_inglaterra_blog.jpg"
+                alt="Imagem Inglaterra"
+              />
+              <h3>Por que escolher a Inglaterra para fazer intercâmbio?</h3>
+              <p>
+                Por que escolher a Inglaterra para estudar no exterior? Bom,
+                existem vários motivos: qualidade de vida, ensino reconhecido
+                mundialmente e...
+                <a href="blog-three.html" target="_blank">Ver mais</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- Dúvidas -->
+      <section id="duvidas-container">
+        <h2>Dúvidas frequentes</h2>
+        <div>
+          <h3>
+            + Qualquer pessoa pode fazer intercâmbio? Existe uma idade ideal?
+          </h3>
+          <p>
+            Literalmente, qualquer pessoa pode fazer intercâmbio! Existem
+            modelos que atendem todos os tipos de pessoas, desde estudantes a
+            profissionais. Para fazer intercâmbio, basta ter coragem e
+            maturidade!
+          </p>
+        </div>
+        <div>
+          <h3>+ Fazer um intercâmbio é muito caro?</h3>
+          <p>
+            Os custos variam de acordo com o destino e a duração do programa
+            escolhido. Cada caso é único!
+          </p>
+        </div>
+        <div>
+          <h3>+ Qual o melhor tipo de acomodação em um intercâmbio?</h3>
+          <p>
+            A acomodação varia conforme o tipo de intercâmbio e seu perfil. Uma
+            opção comum é a homestay, onde você vive com uma família local.
+          </p>
+        </div>
+        <div>
+          <h3>+ Posso trabalhar durante o tempo de intercâmbio?</h3>
+          <p>
+            Alguns países permitem que intercambistas trabalhem, como Austrália,
+            Irlanda e Nova Zelândia. Informe-se sobre as regras locais!
+          </p>
+        </div>
+      </section>
 
-        <!-- Dúvidas -->
-        <section id="duvidas-container">
-            <h2>Dúvidas frequentes</h2>
-            <div>
-                <h3>+ Qualquer pessoa pode fazer intercâmbio? Existe uma idade ideal?</h3>
-                <p>Literalmente, qualquer pessoa pode fazer intercâmbio! Existem modelos que atendem todos os tipos de pessoas, desde estudantes a profissionais. Para fazer intercâmbio, basta ter coragem e maturidade!</p>
+      <!-- Formulário -->
+      <section id="fale-conosco">
+        <form action="#" method="post">
+          <fieldset>
+            <h2>Fale com a gente!</h2>
+            <div class="input-form">
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Nome"
+                required
+              />
             </div>
-            <div>
-                <h3>+ Fazer um intercâmbio é muito caro?</h3>
-                <p>Os custos variam de acordo com o destino e a duração do programa escolhido. Cada caso é único!</p>
+            <div class="input-form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+              />
             </div>
-            <div>
-                <h3>+ Qual o melhor tipo de acomodação em um intercâmbio?</h3>
-                <p>A acomodação varia conforme o tipo de intercâmbio e seu perfil. Uma opção comum é a homestay, onde você vive com uma família local.</p>
+            <div class="select-form">
+              <select name="agencia" id="agencia-form">
+                <option value="" disabled selected>
+                  Escolha a sua agência
+                </option>
+                <option value="agencia">Agência Group One</option>
+              </select>
             </div>
-            <div>
-                <h3>+ Posso trabalhar durante o tempo de intercâmbio?</h3>
-                <p>Alguns países permitem que intercambistas trabalhem, como Austrália, Irlanda e Nova Zelândia. Informe-se sobre as regras locais!</p>
+            <div class="select-form">
+              <select name="destino" id="destino-form">
+                <option value="" disabled selected>
+                  Escolha o seu destino
+                </option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Inglaterra">Inglaterra</option>
+                <option value="Espanha">Espanha</option>
+                <option value="Austrália">Austrália</option>
+              </select>
             </div>
-        </section>
-
-        <!-- Formulário -->
-        <section id="fale-conosco">
-            <form action="#" method="post">
-                <fieldset>
-                    <h2>Fale com a gente!</h2>
-                    <div class="input-form">
-                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
-                    </div>
-                    <div class="input-form">
-                        <input type="email" name="email" id="email" placeholder="E-mail" required />
-                    </div>
-                    <div class="select-form">
-                        <select name="agencia" id="agencia-form">
-                            <option value="" disabled selected>Escolha a sua agência</option>
-                            <option value="agencia">Agência Group One</option>
-                        </select>
-                    </div>
-                    <div class="select-form">
-                        <select name="destino" id="destino-form">
-                            <option value="" disabled selected>Escolha o seu destino</option>
-                            <option value="Estados Unidos">Estados Unidos</option>
-                            <option value="Inglaterra">Inglaterra</option>
-                            <option value="Espanha">Espanha</option>
-                            <option value="Austrália">Austrália</option>
-                        </select>
-                    </div>
-                    <div class="radio-form">
-                        <h4>Objetivo do Intercâmbio</h4>
-                        <input type="radio" name="objetivo" id="estudar" value="estudar">
-                        <label for="estudar">Estudar</label>
-                        <input type="radio" name="objetivo" id="trabalhar" value="trabalhar">
-                        <label for="trabalhar">Trabalhar</label>
-                        <input type="radio" name="objetivo" id="estudar-trabalhar" value="estudar-trabalhar">
-                        <label for="estudar-trabalhar">Estudar e Trabalhar</label>
-                    </div>
-                    <div class="radio-form">
-                        <h4>Quando gostaria de ir?</h4>
-                        <input type="radio" name="tempo" id="3meses" value="3meses">
-                        <label for="3meses">Em até 3 meses</label>
-                        <input type="radio" name="tempo" id="6meses" value="6meses">
-                        <label for="6meses">Em até 6 meses</label>
-                        <input type="radio" name="tempo" id="12meses" value="12meses">
-                        <label for="12meses">Em até 12 meses</label>
-                        <input type="radio" name="tempo" id="indefinido" value="indefinido">
-                        <label for="indefinido">Indefinido</label>
-                    </div>
-                    <div class="radio-form">
-                        <h4>Valor disponível para investimento (R$)</h4>
-                        <input type="radio" name="valor" id="10mil" value="10mil">
-                        <label for="10mil">Até 10 mil</label>
-                        <input type="radio" name="valor" id="1020mil" value="1020mil">
-                        <label for="1020mil">De 10 mil a 20 mil</label>
-                        <input type="radio" name="valor" id="20mil" value="20mil">
-                        <label for="20mil">Acima de 20 mil</label>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="imagem-form">
-                <img class="" src="Imagens/f.png" alt="">
+            <div class="radio-form">
+              <h4>Objetivo do Intercâmbio</h4>
+              <input
+                type="radio"
+                name="objetivo"
+                id="estudar"
+                value="estudar"
+              />
+              <label for="estudar">Estudar</label>
+              <input
+                type="radio"
+                name="objetivo"
+                id="trabalhar"
+                value="trabalhar"
+              />
+              <label for="trabalhar">Trabalhar</label>
+              <input
+                type="radio"
+                name="objetivo"
+                id="estudar-trabalhar"
+                value="estudar-trabalhar"
+              />
+              <label for="estudar-trabalhar">Estudar e Trabalhar</label>
             </div>
-        </section>
+            <div class="radio-form">
+              <h4>Quando gostaria de ir?</h4>
+              <input type="radio" name="tempo" id="3meses" value="3meses" />
+              <label for="3meses">Em até 3 meses</label>
+              <input type="radio" name="tempo" id="6meses" value="6meses" />
+              <label for="6meses">Em até 6 meses</label>
+              <input type="radio" name="tempo" id="12meses" value="12meses" />
+              <label for="12meses">Em até 12 meses</label>
+              <input
+                type="radio"
+                name="tempo"
+                id="indefinido"
+                value="indefinido"
+              />
+              <label for="indefinido">Indefinido</label>
+            </div>
+            <div class="radio-form">
+              <h4>Valor disponível para investimento (R$)</h4>
+              <input type="radio" name="valor" id="10mil" value="10mil" />
+              <label for="10mil">Até 10 mil</label>
+              <input type="radio" name="valor" id="1020mil" value="1020mil" />
+              <label for="1020mil">De 10 mil a 20 mil</label>
+              <input type="radio" name="valor" id="20mil" value="20mil" />
+              <label for="20mil">Acima de 20 mil</label>
+            </div>
+          </fieldset>
+        </form>
+        <div class="imagem-form">
+          <img class="" src="Imagens/f.png" alt="" />
+        </div>
+      </section>
     </main>
 
     <footer>
-        <section class="footer-newsletter">
-            <div id="footer-newsletter-text">
-                <h2>Newsletter</h2>
-                <p>Fique por dentro de todas as novidades e receba as melhores dicas de viagem!</p>
-            </div>
-            <div id="footer-newsletter-input-name">
-                <input type="text" name="nome" id="nome" placeholder="Nome*" required>
-            </div>
-            <div id="footer-newsletter-input-email">
-                <input type="text" name="email" id="email" placeholder="E-mail*" required>
-                <button type="button">Enviar</button>
-            </div>
-        </section>
+      <section class="footer-newsletter">
+        <div id="footer-newsletter-text">
+          <h2>Newsletter</h2>
+          <p>
+            Fique por dentro de todas as novidades e receba as melhores dicas de
+            viagem!
+          </p>
+        </div>
+        <div id="footer-newsletter-input-name">
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome*"
+            required
+          />
+        </div>
+        <div id="footer-newsletter-input-email">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="E-mail*"
+            required
+          />
+          <button type="button">Enviar</button>
+        </div>
+      </section>
 
-        <section id="social-links">
-            <h5>Nossas redes:</h5>
-            <ul>
-                <li><img src="./Imagens/logo-footer-instagram.png" alt="Logo Instagram"><a href="#" target="_blank">@Agência</a></li>
-                <li><img src="./Imagens/logo-footer-whatsapp.png" alt="Logo WhatsApp"><a href="#" target="_blank">+55 12 3456-7890</a></li>
-                <li><img src="./Imagens/logo-footer-facebook.png" alt="Logo Facebook"><a href="#" target="_blank">@GROUP ONE Agência</a></li>
-            </ul>
-        </section>
+      <section id="social-links">
+        <h5>Nossas redes:</h5>
+        <ul>
+          <li>
+            <img
+              src="./Imagens/logo-footer-instagram.png"
+              alt="Logo Instagram"
+            /><a href="#" target="_blank">@Agência</a>
+          </li>
+          <li>
+            <img
+              src="./Imagens/logo-footer-whatsapp.png"
+              alt="Logo WhatsApp"
+            /><a href="#" target="_blank">+55 12 3456-7890</a>
+          </li>
+          <li>
+            <img
+              src="./Imagens/logo-footer-facebook.png"
+              alt="Logo Facebook"
+            /><a href="#" target="_blank">@GROUP ONE Agência</a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="footer-links">
-            <div id="footer-links-img">
-                <img src="./Imagens/logo-footer-links.png" alt="imagem-logo-group-one">
-            </div>
-            <div id="footer-links-institucional">
-                <h4>Institucional</h4>
-                <ul>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Parcerias Educacionais</a></li>
-                    <li><a href="#">Trabalhe conosco</a></li>
-                    <li><a href="#">Fale conosco</a></li>
-                </ul>
-            </div>
-            <div id="footer-links-estudar">
-                <h4>Estudar</h4>
-                <ul>
-                    <li><a href="#">Curso de Idiomas</a></li>
-                    <li><a href="#">High School</a></li>
-                    <li><a href="#">College Pathway</a></li>
-                    <li><a href="#">Programa de férias</a></li>
-                </ul>
-            </div>
-            <div id="footer-links-trabalhar">
-                <h4>Trabalhar</h4>
-                <ul>
-                    <li><a href="#">Study and Work</a></li>
-                    <li><a href="#">Estágio e Trainne</a></li>
-                    <li><a href="#">Trabalhos voluntários</a></li>
-                    <li><a href="#">Inglês para Hotelaria</a></li>
-                </ul>
-            </div>
-            <div id="footer-links-idiomas">
-                <h4>Idiomas</h4>
-                <ul>
-                    <li><a href="#">Alemão</a></li>
-                    <li><a href="#">Árabe</a></li>
-                    <li><a href="#">Chinês</a></li>
-                    <li><a href="#">Inglês</a></li>
-                </ul>
-            </div>
-        </section>
+      <section class="footer-links">
+        <div id="footer-links-img">
+          <img
+            src="./Imagens/logo-footer-links.png"
+            alt="imagem-logo-group-one"
+          />
+        </div>
+        <div id="footer-links-institucional">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Parcerias Educacionais</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+            <li><a href="#">Fale conosco</a></li>
+          </ul>
+        </div>
+        <div id="footer-links-estudar">
+          <h4>Estudar</h4>
+          <ul>
+            <li><a href="#">Curso de Idiomas</a></li>
+            <li><a href="#">High School</a></li>
+            <li><a href="#">College Pathway</a></li>
+            <li><a href="#">Programa de férias</a></li>
+          </ul>
+        </div>
+        <div id="footer-links-trabalhar">
+          <h4>Trabalhar</h4>
+          <ul>
+            <li><a href="#">Study and Work</a></li>
+            <li><a href="#">Estágio e Trainne</a></li>
+            <li><a href="#">Trabalhos voluntários</a></li>
+            <li><a href="#">Inglês para Hotelaria</a></li>
+          </ul>
+        </div>
+        <div id="footer-links-idiomas">
+          <h4>Idiomas</h4>
+          <ul>
+            <li><a href="#">Alemão</a></li>
+            <li><a href="#">Árabe</a></li>
+            <li><a href="#">Chinês</a></li>
+            <li><a href="#">Inglês</a></li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="footer-rights">
-            <img src="./Imagens/logo_png.png" alt="logo-group-one">
-            <small>&copy; 2024 Group Agência. Todos os direitos reservados.</small>
-        </section>
+      <section class="footer-rights">
+        <img src="./Imagens/logo_png.png" alt="logo-group-one" />
+        <small>&copy; 2024 Group Agência. Todos os direitos reservados.</small>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>
