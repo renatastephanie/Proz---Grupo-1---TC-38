@@ -1,4 +1,4 @@
-//Renderização dinâmica nos Cards
+//Renderização dinâmica nos Cards dos Cursos
 let divCards = document.getElementById("cards-main");
 let programas = [
   {
@@ -48,4 +48,65 @@ for (let programa of programas) {
   //Adicionando elementos na div
   div.append(h5, p, a);
   divCards.appendChild(div);
+}
+
+//Renderização dinâmica no Blog
+let divBlog = document.getElementById("blog-container");
+let paginas = [
+  {
+    imagem: "Imagens/img_amigos_blog.jpg",
+    alt: "Imagem Intercâmbio Educacional",
+    titulo: "Intercâmbio educacional: o que é, como fazer, destinos e mais",
+    texto:
+      "Fazer um intercâmbio educacional possibilita que o seu entendimento cultural, profissional e pessoal seja expandido. Estudar no exterior, trabalhar em...",
+    link: "blog-one.html",
+  },
+  {
+    imagem: "Imagens/img_australia_blog.jpg",
+    alt: "Imagem Austrália",
+    titulo: "A Austrália é um país seguro? Tudo sobre a segurança na Austrália",
+    texto:
+      "A Austrália tem paisagens incríveis e qualidade de vida elevada, e a segurança é um ponto que atrai quem vai...",
+    link: "blog-two.html",
+  },
+  {
+    imagem: "Imagens/img_inglaterra_blog.jpg",
+    alt: "Imagem Inglaterra",
+    titulo: "Por que escolher a Inglaterra para fazer intercâmbio?",
+    texto:
+      "Por que escolher a Inglaterra para estudar no exterior? Bom, existem vários motivos: qualidade de vida, ensino reconhecido mundialmente e...",
+    link: "blog-three.html",
+  },
+];
+
+for (let pagina of paginas) {
+  //Criação da div filha
+  let div = document.createElement("div");
+  div.className = "blog-item";
+
+  //Criação da imagem
+  let img = document.createElement("img");
+  img.src = pagina.imagem;
+  img.alt = pagina.alt;
+
+  //Criação do título
+  let h3 = document.createElement("h3");
+  h3.textContent = pagina.titulo;
+
+  //Criação do parágrafo
+  let p = document.createElement("p");
+  p.textContent = pagina.texto;
+
+  //Criação da âncora para o link
+  let a = document.createElement("a");
+  a.href = pagina.link;
+  a.target = "_blank";
+  a.textContent = "Ver mais";
+
+  //Adicionando a tag <a> ao parágrafo
+  p.appendChild(a)
+
+  //Adicionando elementos na div
+  div.append(img, h3, p);
+  divBlog.appendChild(div);
 }

@@ -127,7 +127,7 @@ nav ul li a:hover {
 #cards-main {
   padding: 40px;
   display: flex;
-  justify-content: center;
+  justify-content:  center;
   flex-wrap: wrap;
   background-color: #f4f4f4;
   gap: 40px;
@@ -139,9 +139,13 @@ nav ul li a:hover {
   max-width: 500px;
   background-color: white;
   border-radius: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 35px;
 }
 
 #cards-main h5 {
@@ -163,7 +167,7 @@ nav ul li a:hover {
   color: white;
   border-radius: 20px;
   font-weight: 500;
-  padding: 15px;
+  padding: 15px 20px;
   transition: all 0.5s ease;
   cursor: pointer;
   flex: 0 1 auto;
