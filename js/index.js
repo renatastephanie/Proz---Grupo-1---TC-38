@@ -1,4 +1,4 @@
-//Renderização dinâmica nos Cards dos Cursos
+// Renderização dinâmica nos Cards dos Cursos
 let divCards = document.getElementById("cards-main");
 let programas = [
   {
@@ -28,29 +28,20 @@ let programas = [
 ];
 
 for (let programa of programas) {
-  //Criação da div filha
   let div = document.createElement("div");
-
-  //Criação do título
   let h5 = document.createElement("h5");
   h5.textContent = programa.titulo;
-
-  //Criação do parágrafo
   let p = document.createElement("p");
   p.textContent = programa.paragrafo;
-
-  //Criação da âncora para o link
   let a = document.createElement("a");
   a.href = programa.link;
   a.target = "_blank";
   a.textContent = "Saiba mais";
-
-  //Adicionando elementos na div
   div.append(h5, p, a);
   divCards.appendChild(div);
 }
 
-//Renderização dinâmica no Blog
+// Renderização dinâmica no Blog
 let divBlog = document.getElementById("blog-container");
 let paginas = [
   {
@@ -80,33 +71,65 @@ let paginas = [
 ];
 
 for (let pagina of paginas) {
-  //Criação da div filha
   let div = document.createElement("div");
   div.className = "blog-item";
-
-  //Criação da imagem
   let img = document.createElement("img");
   img.src = pagina.imagem;
   img.alt = pagina.alt;
-
-  //Criação do título
   let h3 = document.createElement("h3");
   h3.textContent = pagina.titulo;
-
-  //Criação do parágrafo
   let p = document.createElement("p");
   p.textContent = pagina.texto;
-
-  //Criação da âncora para o link
   let a = document.createElement("a");
   a.href = pagina.link;
   a.target = "_blank";
   a.textContent = "Ver mais";
-
-  //Adicionando a tag <a> ao parágrafo
-  p.appendChild(a)
-
-  //Adicionando elementos na div
+  p.appendChild(a);
   div.append(img, h3, p);
   divBlog.appendChild(div);
 }
+
+// Selecionando os elementos do formulário
+const nomeInput = document.querySelector('#footer-newsletter-input-name input');
+const emailInput = document.querySelector('#footer-newsletter-input-email input');
+const submitButton = document.querySelector('#footer-newsletter-input-email button');
+
+// Função para validar o nome
+function validarNome(nome) {
+  return nome.trim().length >= 2; // Nome deve ter pelo menos 2 caracteres
+}
+
+// Função para validar o e-mail
+function validarEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex básico para validação de e-mails
+  return emailRegex.test(email);
+}
+
+// Adicionando um evento ao botão de envio
+submitButton.addEventListener('click', function (event) {
+  // Prevenindo a ação padrão
+  event.preventDefault();
+
+  // Pegando os valores dos campos
+  const nome = nomeInput.value;
+  const email = emailInput.value;
+
+  // Validando os campos
+  let erros = [];
+  if (!validarNome(nome)) {
+    erros.push('O nome deve conter pelo menos 2 caracteres.');
+  }
+  if (!validarEmail(email)) {
+    erros.push('Por favor, insira um e-mail válido.');
+  }
+
+  // Exibindo as mensagens de erro ou sucesso
+  if (erros.length > 0) {
+    alert(erros.join('\n')); // Mostra os erros em um alerta (pode ser customizado)
+  } else {
+    alert('Inscrição realizada com sucesso!'); // Mensagem de sucesso
+    // Aqui você pode enviar os dados para o servidor ou limpar os campos
+    nomeInput.value = '';
+    emailInput.value = '';
+  }
+});

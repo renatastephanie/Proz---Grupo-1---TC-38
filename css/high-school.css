@@ -14,15 +14,15 @@ body {
   line-height: 1.6;
 }
 
-/* Centralizar as imagens */
+/* Centralizar as imagens e espaçamento com texto */
 main img {
   display: block;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   border-radius: 8px;
   width: 30em;
-  margin: 30px;
   margin: 0 auto; /* Centraliza as imagens */
+  margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
 /* Nav */
