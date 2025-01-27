@@ -57,6 +57,7 @@ nav ul li a:hover {
 }
 
 #a1 {
+  font-size: 1.5rem;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -85,20 +86,26 @@ nav ul li a:hover {
 main h1 {
   text-align: center;
   color: #1a571a;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 #plano-estudos p {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 main h2 {
   color: #1a571a;
   padding: 10px 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 main p {
   padding: 10px 20px;
   text-align: left;
+  font-size: 1.2rem;
 }
 
 /* Footer */

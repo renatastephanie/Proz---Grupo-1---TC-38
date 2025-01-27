@@ -51,6 +51,20 @@ section {
   background-color: #dad7cd;
 }
 
+main section h2 {
+  font-size: 1.5rem;
+}
+
+main section h3 {
+  font-size: 1.3rem;
+}
+
+main section p,
+main section ul,
+main section ol {
+  font-size: 1.2rem;
+}
+
 #study-in-canada-images,
 #education-system-images {
   display: flex;
