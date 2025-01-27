@@ -42,7 +42,7 @@ for (let programa of programas) {
 }
 
 // Renderização dinâmica no Blog
-let divBlog = document.getElementById("blog-container");
+let divBlog = document.getElementById("blog");
 let paginas = [
   {
     imagem: "Imagens/img_amigos_blog.jpg",

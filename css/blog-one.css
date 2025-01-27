@@ -14,17 +14,6 @@ body {
   line-height: 1.6;
 }
 
-/* Centralizar as imagens */
-main img {
-  display: block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 30em;
-  margin: 30px auto; /* Centraliza as imagens */
-}
-
 /* Nav */
 header {
   display: flex;
@@ -72,7 +61,6 @@ main {
   padding: 20px;
 }
 
-/* Mantém os títulos em verde */
 main h4,
 main h2,
 main h1 {
@@ -83,11 +71,11 @@ main h1 {
 
 main h5 {
   color: #3a5f3a;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
-/* Altera o texto geral para preto */
 main p,
 main ul,
 main .negrito,
@@ -98,10 +86,22 @@ main ul li {
 main ul {
   list-style-position: inside;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 main p {
   margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+main img {
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 30em;
+  margin: 30px auto; /* Centraliza as imagens */
 }
 
 /* Footer */

@@ -14,17 +14,6 @@ body {
   line-height: 1.6;
 }
 
-/* Centralizar as imagens */
-main img {
-  display: block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 30em;
-  margin: 30px auto;
-}
-
 /* Nav */
 header {
   display: flex;
@@ -74,28 +63,42 @@ main {
 
 main h4 {
   font-size: 1.5rem;
-  color: #3a5f3a; /* Verde */
+  color: #3a5f3a;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 main p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
 main ul {
-  margin-left: 20px;
-  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 15px;
 }
 
 main ul li {
   margin-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 main .negrito {
   font-weight: bold;
   color: #3a5f3a;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Centralizar as imagens */
+main img {
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 30em;
+  margin: 30px auto;
 }
 
 /* Footer */
