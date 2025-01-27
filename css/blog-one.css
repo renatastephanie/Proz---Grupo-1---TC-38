@@ -77,7 +77,13 @@ main h4,
 main h2,
 main h1 {
   font-size: 1.5rem;
-  color: #3a5f3a; /* Verde */
+  color: #3a5f3a;
+  margin-bottom: 10px;
+}
+
+main h5 {
+  color: #3a5f3a;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -87,6 +93,15 @@ main ul,
 main .negrito,
 main ul li {
   color: #000; /* Preto */
+}
+
+main ul {
+  list-style-position: inside;
+  margin-bottom: 10px;
+}
+
+main p {
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -133,4 +148,173 @@ main ul li {
 #footer-newsletter-input-email button {
   width: 25%;
   height: 3vh;
+  margin-top: 10px;
+  background-color: #344e41;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: color 2s ease;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+#footer-newsletter-input-email button:hover {
+  background-color: #2a4b30;
+}
+
+#social-links {
+  background-color: #d9d9d9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#social-links,
+#social-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 30px;
+}
+
+#social-links h5 {
+  color: #344e41;
+  font-size: 15px;
+}
+
+#social-links ul li {
+  padding-right: 20px;
+  display: flex;
+}
+
+#social-links ul li img {
+  width: 1.2vw;
+}
+
+#social-links ul li a {
+  text-decoration: none;
+  color: #344e41;
+  padding-left: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #dad7cd;
+}
+
+#footer-links-img img {
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+#footer-links-institucional,
+#footer-links-estudar,
+#footer-links-trabalhar,
+#footer-links-idiomas {
+  padding-left: 50px;
+}
+
+#footer-links-institucional h4,
+#footer-links-estudar h4,
+#footer-links-trabalhar h4,
+#footer-links-idiomas h4 {
+  color: #588157;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#footer-links-institucional ul li,
+#footer-links-estudar ul li,
+#footer-links-trabalhar ul li,
+#footer-links-idiomas ul li {
+  list-style: none;
+  font-weight: lighter;
+}
+
+#footer-links-institucional ul li a,
+#footer-links-estudar ul li a,
+#footer-links-trabalhar ul li a,
+#footer-links-idiomas ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-rights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #344e41;
+  color: white;
+  padding: 20px;
+}
+
+.footer-rights img {
+  width: 2%;
+}
+
+.footer-rights small {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1565px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  nav ul li {
+    font-size: 0.5rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.2rem;
+  }
 }

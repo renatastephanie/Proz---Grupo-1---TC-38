@@ -68,20 +68,26 @@ main {
   padding: 20px;
 }
 
-main section {
-  margin-bottom: 20px;
-}
-
-main section h2,
-main section h1 {
+main h2,
+main h1 {
   font-size: 2rem;
   margin-bottom: 10px;
   color: #3a5f3a; /* Aplicando o mesmo tom de verde */
 }
 
-main section p {
+main img {
+  margin-bottom: 30px;
+}
+
+main p {
   font-size: 1.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+main ul {
+  font-size: 1.2rem;
+  list-style-position: inside;
+  margin-bottom: 10px;
 }
 
 /* Footer */
