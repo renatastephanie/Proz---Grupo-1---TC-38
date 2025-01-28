@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/work-study.css" />
-    <!-- Linkando o CSS -->
+    <script src="js/newsletter.js" defer></script>
     <title>Work & Study</title>
     <link rel="icon" type="image/png" href="Imagens/logo_png.png" />
   </head>
@@ -79,24 +79,24 @@
             viagem!
           </p>
         </div>
-        <div id="footer-newsletter-input-name">
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            placeholder="Nome*"
-            required
-          />
-        </div>
-        <div id="footer-newsletter-input-email">
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="E-mail*"
-            required
-          />
-          <button type="button">Enviar</button>
+        <div id="footer-newsletter-form">
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <input type="submit" value="Enviar" />
+          </form>
         </div>
       </section>
 
@@ -144,7 +144,7 @@
           <h4>Estudar</h4>
           <ul>
             <li><a href="#">Curso de Idiomas</a></li>
-            <li><a href="#">Summer Program</a></li>
+            <li><a href="#">High School</a></li>
             <li><a href="#">College Pathway</a></li>
             <li><a href="#">Programa de férias</a></li>
           </ul>

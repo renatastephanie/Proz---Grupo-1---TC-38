@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/australia.css" />
     <link rel="icon" type="image/png" href="Imagens/logo_png.png" />
+    <script src="js/newsletter.js" defer></script>
     <title>Conheça a Austrália!</title>
   </head>
   <body>
@@ -242,24 +243,24 @@
             viagem!
           </p>
         </div>
-        <div id="footer-newsletter-input-name">
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            placeholder="Nome*"
-            required
-          />
-        </div>
-        <div id="footer-newsletter-input-email">
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="E-mail*"
-            required
-          />
-          <button type="button">Enviar</button>
+        <div id="footer-newsletter-form">
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <input type="submit" value="Enviar" />
+          </form>
         </div>
       </section>
 

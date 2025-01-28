@@ -99,6 +99,7 @@ nav ul li a:hover {
   border-bottom: 1px solid white;
   background-color: transparent;
   font-size: 16px;
+  color: white;
 }
 
 .banner-container-input input::placeholder {

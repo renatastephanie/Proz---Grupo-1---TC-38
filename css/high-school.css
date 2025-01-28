@@ -108,11 +108,18 @@ main ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
 }
 
-#footer-newsletter-input-name input,
-#footer-newsletter-input-email input {
+#footer-newsltter-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+#footer-newsletter-form input[type="text"],
+#footer-newsletter-form input[type="email"] {
   border: none;
   border-bottom: 1px solid white;
   background-color: transparent;
@@ -120,37 +127,28 @@ main ul {
   font-size: 0.8rem;
   color: white;
   width: 15vw;
+  padding-bottom: 5px;
+  margin-right: 20px;
 }
-
-#footer-newsletter-input-name input::placeholder,
-#footer-newsletter-input-email input::placeholder {
+#footer-newsletter-form input[type="text"]::placeholder,
+#footer-newsletter-form input[type="email"]::placeholder {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
-#footer-newsletter-input-email {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 48px;
-}
-
-#footer-newsletter-input-email button {
-  width: 25%;
-  height: 3vh;
-  margin-top: 10px;
+#footer-newsletter-form input[type="submit"] {
   background-color: #344e41;
-  outline: none;
-  border: none;
-  color: white;
   border-radius: 10px;
-  transition: color 2s ease;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  transition: all 0.5s ease;
   cursor: pointer;
-  align-self: flex-end;
+  color: white;
 }
 
-#footer-newsletter-input-email button:hover {
-  background-color: #2a4b30;
+#footer-newsletter-form input[type="submit"]:hover {
+  background-color: #669e64;
 }
 
 #social-links {
@@ -191,6 +189,7 @@ main ul {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  background-color: #dad7cd;
 }
 
 #footer-links-img img {
@@ -245,4 +244,65 @@ main ul {
 
 .footer-rights small {
   padding-left: 20px;
+}
+
+@media screen and (max-width: 1565px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  nav ul li {
+    font-size: 0.5rem;
+  }
+
+  header img {
+    max-width: 10vw;
+  }
+
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  footer,
+  button,
+  #footer-newsletter-input-name input::placeholder,
+  #footer-newsletter-input-email input::placeholder {
+    font-size: 0.2rem;
+  }
 }
