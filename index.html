@@ -216,8 +216,6 @@
             </div>
             <div class="radio-form">
               <h4>Quando gostaria de ir?</h4>
-              <input type="radio" name="tempo" id="3meses" value="3meses" />
-              <label for="3meses">Em até 3 meses</label>
               <input type="radio" name="tempo" id="6meses" value="6meses" />
               <label for="6meses">Em até 6 meses</label>
               <input type="radio" name="tempo" id="12meses" value="12meses" />
@@ -239,6 +237,9 @@
               <input type="radio" name="valor" id="20mil" value="20mil" />
               <label for="20mil">Acima de 20 mil</label>
             </div>
+            <div class="input-form">
+              <input type="submit" value="Enviar" />
+            </div>
           </fieldset>
         </form>
         <div class="imagem-form">
@@ -256,24 +257,24 @@
             viagem!
           </p>
         </div>
-        <div id="footer-newsletter-input-name">
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            placeholder="Nome*"
-            required
-          />
-        </div>
-        <div id="footer-newsletter-input-email">
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="E-mail*"
-            required
-          />
-          <button type="button">Enviar</button>
+        <div id="footer-newsletter-form">
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <input type="submit" value="Enviar" />
+          </form>
         </div>
       </section>
 

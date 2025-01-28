@@ -90,9 +90,9 @@ for (let pagina of paginas) {
 }
 
 // Selecionando os elementos do formulário
-const nomeInput = document.querySelector('#footer-newsletter-input-name input');
-const emailInput = document.querySelector('#footer-newsletter-input-email input');
-const submitButton = document.querySelector('#footer-newsletter-input-email button');
+const nomeInput = document.querySelector('#footer-newsletter-form input[type="text"');
+const emailInput = document.querySelector('#footer-newsletter-form input[type="email"');
+const submitButton = document.querySelector('#footer-newsletter-form input[type="submit"');
 
 // Função para validar o nome
 function validarNome(nome) {
