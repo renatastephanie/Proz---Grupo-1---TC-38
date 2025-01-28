@@ -1,4 +1,4 @@
-// Selecionando os elementos do formulário
+// Selecionando os elementos do formulário Newsletter
 const nomeInput = document.querySelector('#footer-newsletter-form input[type="text"');
 const emailInput = document.querySelector('#footer-newsletter-form input[type="email"');
 const submitButton = document.querySelector('#footer-newsletter-form input[type="submit"');

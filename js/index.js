@@ -88,3 +88,96 @@ for (let pagina of paginas) {
   div.append(img, h3, p);
   divBlog.appendChild(div);
 }
+
+// Array com os dados dos destinos
+const destinos = [
+  {
+    imagem: "Imagens/Austrália.jpeg",
+    titulo: "Austrália",
+    descricao:
+      "Fazer um intercâmbio na Austrália é poder desfrutar de paisagens inacreditáveis, praias maravilhosas, um clima parecido ao nosso e peculiaridades que tornam a estada ainda mais agradável.",
+    link: "australia.html",
+  },
+  {
+    imagem: "Imagens/Canadá.jpeg",
+    titulo: "Canadá",
+    descricao:
+      "Como não considerar um intercâmbio em um país completo? Tem neve, praia, inglês, francês, moradores hospitaleiros e paisagens de cinema.",
+    link: "canada.html",
+  },
+  {
+    imagem: "Imagens/EUA.jpg",
+    titulo: "Estados Unidos",
+    descricao:
+      "Em um país com dimensões continentais, nada mais natural do que encontrar uma diversidade enorme de paisagens, culturas e mais.",
+    link: "eua.html",
+  },
+  {
+    imagem: "Imagens/Espanha.jpg",
+    titulo: "Espanha",
+    descricao:
+      "Fazer um intercâmbio na Espanha é explorar uma rica cultura, com cidades vibrantes como Madrid e Barcelona.",
+    link: "espanha.html",
+  },
+];
+
+// Seleciona o contêiner onde o card será exibido
+const container = document.querySelector(".container");
+
+// Inicializa o índice do carrossel
+let idx = 0;
+
+// Função para exibir o card atual com transição suave
+function exibirCard() {
+  const destino = destinos[idx];
+
+  // Seleciona o card atual, se já existir
+  let card = container.querySelector(".card");
+
+  if (!card) {
+    card = document.createElement("div");
+    card.classList.add("card");
+    card.style.opacity = 0; // Inicialmente invisível
+    container.appendChild(card);
+  }
+
+  // Atualiza o conteúdo do card
+  card.innerHTML = `
+    <img src="${destino.imagem}" alt="Imagem de ${destino.titulo}" />
+    <h3>${destino.titulo}</h3>
+    <p>${destino.descricao}</p>
+    <a href="${destino.link}" target="_blank">
+      <button>SAIBA MAIS</button>
+    </a>
+  `;
+
+  // Suaviza a transição
+  setTimeout(() => {
+    card.style.opacity = 1;
+    card.style.transform = "translateX(0)";
+  }, 100);
+}
+
+// Função do carrossel
+function carrossel() {
+  // Suaviza a saída do card atual
+  const card = container.querySelector(".card");
+  if (card) {
+    card.style.opacity = 0;
+    card.style.transform = "translateX(-100px)"; // Move para fora
+  }
+
+  idx++;
+  if (idx > destinos.length - 1) {
+    idx = 0;
+  }
+
+  // Aguarda a saída antes de trocar o conteúdo
+  setTimeout(exibirCard, 600); // Espera o tempo da transição (0.6s)
+}
+
+// Exibe o primeiro card ao carregar a página
+exibirCard();
+
+// Define o intervalo para trocar os cards
+setInterval(carrossel, 3500); // Tempo ajustado para dar espaço à transição
