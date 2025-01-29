@@ -181,3 +181,20 @@ exibirCard();
 
 // Define o intervalo para trocar os cards
 setInterval(carrossel, 3500); // Tempo ajustado para dar espaço à transição
+
+// Validação do Banner
+document.getElementById('search-button').addEventListener('click', function () {
+  const languageInput = document.getElementById('language-input').value.trim();
+  const exchangeTypeInput = document.getElementById('exchange-type-input').value.trim();
+
+  if (languageInput === '') {
+    alert('Por favor, preencha o campo de idioma, país ou cidade.');
+    return;
+  }
+
+  if (exchangeTypeInput === '') {
+    alert('Por favor, escolha o tipo de intercâmbio.');
+    return;
+  }
+  alert('Busca realizada com sucesso!');
+});
