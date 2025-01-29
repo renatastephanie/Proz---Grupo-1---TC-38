@@ -693,3 +693,18 @@ nav ul li a:hover {
     font-size: 0.2rem;
   }
 }
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none; /* Oculta as mensagens de erro inicialmente */
+  margin-top: 5px;
+}
+
+
+.sucesso-message {
+  color: green;
+  font-size: 0.9em;
+  display: none; /* Oculta as mensagens de erro inicialmente */
+  margin-top: 5px;
+}
