@@ -66,8 +66,8 @@ main {
   padding: 40px;
 }
 
-h2,
-h3 {
+main h2,
+main h3 {
   color: #344e41;
 }
 
@@ -107,6 +107,14 @@ h3 {
   align-items: center;
   color: white;
   height: 15vh;
+}
+
+.footer-newsletter h2 {
+  margin-bottom: 0px;
+}
+
+.footer-newsletter p {
+  margin-top: 0px;
 }
 
 #footer-newsletter-text {
