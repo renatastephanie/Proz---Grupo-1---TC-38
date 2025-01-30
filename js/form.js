@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('nome-error').style.display = 'block';
         isValid = false;
 
-        // lipa a msg
+        // Limpa a msg
         setTimeout(() => {
           document.getElementById('nome-error').textContent = ''; 
           document.getElementById('nome-error').style.display = 'none'; 
@@ -124,6 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('sucesso-message').style.display = 'block';
         
         form.reset(); // Limpa o formulário após o envio
+        setTimeout(() => {
+          document.getElementById('sucesso-message').style.display = 'none';
+        }, 3000);
       }
     });
   

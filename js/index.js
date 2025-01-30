@@ -89,7 +89,7 @@ for (let pagina of paginas) {
   divBlog.appendChild(div);
 }
 
-// Array com os dados dos destinos
+// Renderização dinâmica com os destinos
 const destinos = [
   {
     imagem: "Imagens/Austrália.jpeg",
@@ -124,68 +124,31 @@ const destinos = [
 // Seleciona o contêiner onde o card será exibido
 const container = document.querySelector(".container");
 
-// Inicializa o índice do carrossel
-let idx = 0;
+for (let destino of destinos) {
+  // Criando o card
+  card = document.createElement("div");
+  card.classList.add("card");
 
-// Função para exibir o card atual com transição suave
-function exibirCard() {
-  const destino = destinos[idx];
-
-  // Seleciona o card atual, se já existir
-  let card = container.querySelector(".card");
-
-  if (!card) {
-    card = document.createElement("div");
-    card.classList.add("card");
-    card.style.opacity = 0; // Inicialmente invisível
-    container.appendChild(card);
-  }
-
-  // Atualiza o conteúdo do card
+  // Adicionando o código ao card
   card.innerHTML = `
-    <img src="${destino.imagem}" alt="Imagem de ${destino.titulo}" />
-    <h3>${destino.titulo}</h3>
-    <p>${destino.descricao}</p>
-    <a href="${destino.link}" target="_blank">
-      <button>SAIBA MAIS</button>
-    </a>
-  `;
+  <img src="${destino.imagem}" alt="Imagem de ${destino.titulo}" />
+  <h3>${destino.titulo}</h3>
+  <p>${destino.descricao}</p>
+  <a href="${destino.link}" target="_blank">
+    <button>SAIBA MAIS</button>
+  </a>
+`;
 
-  // Suaviza a transição
-  setTimeout(() => {
-    card.style.opacity = 1;
-    card.style.transform = "translateX(0)";
-  }, 100);
+  // Adicionando o card ao container
+  container.appendChild(card);
 }
-
-// Função do carrossel
-function carrossel() {
-  // Suaviza a saída do card atual
-  const card = container.querySelector(".card");
-  if (card) {
-    card.style.opacity = 0;
-    card.style.transform = "translateX(-100px)"; // Move para fora
-  }
-
-  idx++;
-  if (idx > destinos.length - 1) {
-    idx = 0;
-  }
-
-  // Aguarda a saída antes de trocar o conteúdo
-  setTimeout(exibirCard, 600); // Espera o tempo da transição (0.6s)
-}
-
-// Exibe o primeiro card ao carregar a página
-exibirCard();
-
-// Define o intervalo para trocar os cards
-setInterval(carrossel, 3500); // Tempo ajustado para dar espaço à transição
 
 // Validação do Banner
 document.getElementById("search-button").addEventListener("click", function () {
   const languageInput = document.getElementById("language-input").value.trim();
-  const exchangeTypeInput = document.getElementById("exchange-type-input").value.trim();
+  const exchangeTypeInput = document
+    .getElementById("exchange-type-input")
+    .value.trim();
 
   let errosBanner = [];
   if (languageInput === "") {
