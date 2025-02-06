@@ -93,20 +93,16 @@ nav ul li a:hover {
   gap: 10px;
 }
 
-.banner-container-input input {
+.banner-container-input select {
   flex: 1;
   border: none;
   border-bottom: 1px solid white;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.116);
   font-size: 16px;
-  color: white;
+  color: #0000007c;
 }
 
-.banner-container-input input::placeholder {
-  color: white;
-}
-
-.banner-container-input input:focus {
+.banner-container-input select:focus {
   outline: none;
 }
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script src="js/index.js" defer></script>
     <script src="js/newsletter.js" defer></script>
-    <script src="js/form.js"  defer></script>
+    <script src="js/form.js" defer></script>
     <link rel="icon" type="image/png" href="Imagens/logo_png.png" />
   </head>
 
@@ -39,18 +39,21 @@
           <h3>Descubra o destino para o seu intercâmbio</h3>
         </div>
         <div class="banner-container-input">
-          <input
-            type="text"
-            placeholder="Digite o nome de um idioma, País ou Cidade"
-            id="language-input"
-            name="language-input"
-          />
-          <input
-            type="text"
-            placeholder="Escolha o tipo de intercâmbio"
-            id="exchange-type-input"
-            name="exchange-type-input"
-          />
+          <select id="country-select" name="country-select">
+            <option value="" disabled selected>Selecione um país</option>
+            <option value="espanha">Espanha</option>
+            <option value="estados-unidos">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="inglaterra">Inglaterra</option>
+            <option value="australia">Austrália</option>
+          </select>
+          <select id="exchange-select" name="exchange-select">
+            <option value="" disabled selected>Selecione um tipo de intercâmbio</option>
+            <option value="high-school">High School</option>
+            <option value="curso-idiomas">Curso de Idiomas</option>
+            <option value="work-study">Work & Study</option>
+            <option value="summer-program">Summer Program</option>
+          </select>
           <button id="search-button">🔍</button>
         </div>
       </div>
@@ -116,16 +119,10 @@
       <section id="fale-conosco">
         <form action="#" method="post">
           <fieldset>
-            
             <h2>Fale com a gente!</h2>
             <div class="input-form">
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Nome"  
-              />
-               <!-- msg do form-->
+              <input type="text" name="nome" id="nome" placeholder="Nome" />
+              <!-- msg do form-->
               <span class="error-message" id="nome-error"></span>
             </div>
             <div class="input-form">
@@ -135,7 +132,7 @@
                 id="email"
                 placeholder="E-mail"
               />
-               <!-- msg do form-->
+              <!-- msg do form-->
               <span class="error-message" id="email-error"></span>
             </div>
 
@@ -146,9 +143,8 @@
                 </option>
                 <option value="agencia">Agência Group One</option>
               </select>
-               <!-- msg do form-->
+              <!-- msg do form-->
               <span class="error-message" id="agencia-error"></span>
-
             </div>
             <div class="select-form">
               <select name="destino" id="destino-form">
@@ -160,9 +156,8 @@
                 <option value="Espanha">Espanha</option>
                 <option value="Austrália">Austrália</option>
               </select>
-               <!-- msg do form-->
+              <!-- msg do form-->
               <span class="error-message" id="destino-error"></span>
-
             </div>
             <div class="radio-form">
               <h4>Objetivo do Intercâmbio</h4>
@@ -187,9 +182,8 @@
                 value="estudar-trabalhar"
               />
               <label for="estudar-trabalhar">Estudar e Trabalhar</label>
-               <!-- msg do form-->
+              <!-- msg do form-->
               <span class="error-message" id="objetivo-error"></span>
-
             </div>
             <div class="radio-form">
               <h4>Quando gostaria de ir?</h4>
@@ -214,19 +208,18 @@
               <label for="1020mil">De 10 mil a 20 mil</label>
               <input type="radio" name="valor" id="20mil" value="20mil" />
               <label for="20mil">Acima de 20 mil</label>
-               <!-- msg do form-->
+              <!-- msg do form-->
               <span class="error-message" id="valor-error"></span>
-
             </div>
             <div class="input-form">
               <!-- msg do form-->
               <span class="sucesso-message" id="sucesso-message"></span>
-              <br>
+              <br />
               <input type="submit" value="Enviar" />
             </div>
           </fieldset>
         </form>
-        
+
         <div class="imagem-form">
           <img class="" src="Imagens/f.png" alt="" />
         </div>
@@ -260,8 +253,7 @@
               placeholder="E-mail"
               required
             />
-            
-            
+
             <input type="submit" value="Enviar" />
           </form>
         </div>

@@ -145,17 +145,15 @@ for (let destino of destinos) {
 
 // Validação do Banner
 document.getElementById("search-button").addEventListener("click", function () {
-  const languageInput = document.getElementById("language-input").value.trim();
-  const exchangeTypeInput = document
-    .getElementById("exchange-type-input")
-    .value.trim();
+  const countryInput = document.getElementById("country-select").value.trim();
+  const exchangeInput = document.getElementById("exchange-select").value.trim();
 
   let errosBanner = [];
-  if (languageInput === "") {
-    errosBanner.push("Por favor, preencha o campo de idioma, país ou cidade.");
+  if (countryInput === "") {
+    errosBanner.push("Por favor, escolha o tipo de país.");
   }
 
-  if (exchangeTypeInput === "") {
+  if (exchangeInput === "") {
     errosBanner.push("Por favor, escolha o tipo de intercâmbio.");
   }
 
@@ -166,4 +164,8 @@ document.getElementById("search-button").addEventListener("click", function () {
   }
 
   alert("Busca realizada com sucesso!");
+
+  // Reset de valores
+  document.getElementById("country-select").value = "";
+  document.getElementById("exchange-select").value = "";
 });
