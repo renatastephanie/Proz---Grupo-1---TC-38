@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bem-vindo!</title>
@@ -9,329 +10,284 @@
     <script src="js/newsletter.js" defer></script>
     <script src="js/form.js" defer></script>
     <link rel="icon" type="image/png" href="Imagens/logo_png.png" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="Imagens/Logo.png" alt="Logo Group Agência" />
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="about.html">Sobre nós |</a></li>
-          <li><a href="#destino">Destinos |</a></li>
-          <li><a href="#blog">Blog |</a></li>
-          <li><a href="#fale-conosco">Fale conosco</a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagens/Logo.png" alt="Logo Group Agência" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">Sobre nós |</a></li>
+                <li><a href="#destino">Destinos |</a></li>
+                <li><a href="#blog">Blog |</a></li>
+                <li><a href="#fale-conosco">Fale conosco</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Banner -->
     <section class="banner">
-      <div id="banner-container-image">
-        <img src="Imagens/Banner.png" alt="Banner" />
-      </div>
-      <div id="banner-container-text">
-        <div id="banner-container-title">
-          <h2>Não sabe para onde ir?</h2>
-          <h3>Descubra o destino para o seu intercâmbio</h3>
+        <div id="banner-container-image">
+            <img src="Imagens/Banner.png" alt="Banner" />
         </div>
-        <div class="banner-container-input">
-          <select id="country-select" name="country-select">
-            <option value="" disabled selected>Selecione um país</option>
-            <option value="espanha">Espanha</option>
-            <option value="estados-unidos">Estados Unidos</option>
-            <option value="canada">Canadá</option>
-            <option value="inglaterra">Inglaterra</option>
-            <option value="australia">Austrália</option>
-          </select>
-          <select id="exchange-select" name="exchange-select">
-            <option value="" disabled selected>Selecione um tipo de intercâmbio</option>
-            <option value="high-school">High School</option>
-            <option value="curso-idiomas">Curso de Idiomas</option>
-            <option value="work-study">Work & Study</option>
-            <option value="summer-program">Summer Program</option>
-          </select>
-          <button id="search-button">🔍</button>
+        <div id="banner-container-text">
+            <div id="banner-container-title">
+                <h2>Não sabe para onde ir?</h2>
+                <h3>Descubra o destino para o seu intercâmbio</h3>
+            </div>
+            <div class="banner-container-input">
+                <select id="country-select" name="country-select">
+                    <option value="" disabled selected>Selecione um país</option>
+                    <option value="espanha">Espanha</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="canada">Canadá</option>
+                    <option value="inglaterra">Inglaterra</option>
+                    <option value="australia">Austrália</option>
+                </select>
+                <select id="exchange-select" name="exchange-select">
+                    <option value="" disabled selected>Selecione um tipo de intercâmbio</option>
+                    <option value="high-school">High School</option>
+                    <option value="curso-idiomas">Curso de Idiomas</option>
+                    <option value="work-study">Work & Study</option>
+                    <option value="summer-program">Summer Program</option>
+                </select>
+                <button id="search-button">🔍</button>
+            </div>
         </div>
-      </div>
     </section>
 
     <main>
-      <!-- Cards -->
-      <div id="cards-main">
-        <!-- Feito dinamicamente com JS-->
-      </div>
-
-      <!-- Destinos -->
-      <section id="destino" class="carrossel">
-        <img class="destino" src="Imagens/destino.png" alt="destino" />
-        <div class="container">
-          <!-- Feito dinamicamente com JS-->
+        <!-- Cards -->
+        <div id="cards-main">
+            <!-- Feito dinamicamente com JS-->
         </div>
-      </section>
 
-      <!-- Blog -->
-      <div id="blog">
-        <!-- Feito dinamicamente com JS-->
-      </div>
+        <!-- Destinos -->
+        <section id="destino" class="carrossel">
+            <img class="destino" src="Imagens/destino.png" alt="destino" />
+            <div class="container">
+                <!-- Feito dinamicamente com JS-->
+            </div>
+        </section>
 
-      <!-- Dúvidas -->
-      <section id="duvidas-container">
-        <h2>Dúvidas frequentes</h2>
-        <div>
-          <h3>
-            + Qualquer pessoa pode fazer intercâmbio? Existe uma idade ideal?
-          </h3>
-          <p>
-            Literalmente, qualquer pessoa pode fazer intercâmbio! Existem
-            modelos que atendem todos os tipos de pessoas, desde estudantes a
-            profissionais. Para fazer intercâmbio, basta ter coragem e
-            maturidade!
-          </p>
+        <!-- Blog -->
+        <div id="blog">
+            <!-- Feito dinamicamente com JS-->
         </div>
-        <div>
-          <h3>+ Fazer um intercâmbio é muito caro?</h3>
-          <p>
-            Os custos variam de acordo com o destino e a duração do programa
-            escolhido. Cada caso é único!
-          </p>
-        </div>
-        <div>
-          <h3>+ Qual o melhor tipo de acomodação em um intercâmbio?</h3>
-          <p>
-            A acomodação varia conforme o tipo de intercâmbio e seu perfil. Uma
-            opção comum é a homestay, onde você vive com uma família local.
-          </p>
-        </div>
-        <div>
-          <h3>+ Posso trabalhar durante o tempo de intercâmbio?</h3>
-          <p>
-            Alguns países permitem que intercambistas trabalhem, como Austrália,
-            Irlanda e Nova Zelândia. Informe-se sobre as regras locais!
-          </p>
-        </div>
-      </section>
 
-      <!-- Formulário -->
-      <section id="fale-conosco">
-        <form action="#" method="post">
-          <fieldset>
-            <h2>Fale com a gente!</h2>
-            <div class="input-form">
-              <input type="text" name="nome" id="nome" placeholder="Nome" />
-              <!-- msg do form-->
-              <span class="error-message" id="nome-error"></span>
+        <!-- Dúvidas -->
+        <section id="duvidas-container">
+            <h2>Dúvidas frequentes</h2>
+            <div>
+                <h3>
+                    + Qualquer pessoa pode fazer intercâmbio? Existe uma idade ideal?
+                </h3>
+                <p>
+                    Literalmente, qualquer pessoa pode fazer intercâmbio! Existem
+                    modelos que atendem todos os tipos de pessoas, desde estudantes a
+                    profissionais. Para fazer intercâmbio, basta ter coragem e
+                    maturidade!
+                </p>
             </div>
-            <div class="input-form">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-              />
-              <!-- msg do form-->
-              <span class="error-message" id="email-error"></span>
+            <div>
+                <h3>+ Fazer um intercâmbio é muito caro?</h3>
+                <p>
+                    Os custos variam de acordo com o destino e a duração do programa
+                    escolhido. Cada caso é único!
+                </p>
             </div>
+            <div>
+                <h3>+ Qual o melhor tipo de acomodação em um intercâmbio?</h3>
+                <p>
+                    A acomodação varia conforme o tipo de intercâmbio e seu perfil. Uma
+                    opção comum é a homestay, onde você vive com uma família local.
+                </p>
+            </div>
+            <div>
+                <h3>+ Posso trabalhar durante o tempo de intercâmbio?</h3>
+                <p>
+                    Alguns países permitem que intercambistas trabalhem, como Austrália,
+                    Irlanda e Nova Zelândia. Informe-se sobre as regras locais!
+                </p>
+            </div>
+        </section>
 
-            <div class="select-form">
-              <select name="agencia" id="agencia-form">
-                <option value="" disabled selected>
-                  Escolha a sua agência
-                </option>
-                <option value="agencia">Agência Group One</option>
-              </select>
-              <!-- msg do form-->
-              <span class="error-message" id="agencia-error"></span>
-            </div>
-            <div class="select-form">
-              <select name="destino" id="destino-form">
-                <option value="" disabled selected>
-                  Escolha o seu destino
-                </option>
-                <option value="Estados Unidos">Estados Unidos</option>
-                <option value="Canada">Canadá</option>
-                <option value="Espanha">Espanha</option>
-                <option value="Austrália">Austrália</option>
-              </select>
-              <!-- msg do form-->
-              <span class="error-message" id="destino-error"></span>
-            </div>
-            <div class="radio-form">
-              <h4>Objetivo do Intercâmbio</h4>
-              <input
-                type="radio"
-                name="objetivo"
-                id="estudar"
-                value="estudar"
-              />
-              <label for="estudar">Estudar</label>
-              <input
-                type="radio"
-                name="objetivo"
-                id="trabalhar"
-                value="trabalhar"
-              />
-              <label for="trabalhar">Trabalhar</label>
-              <input
-                type="radio"
-                name="objetivo"
-                id="estudar-trabalhar"
-                value="estudar-trabalhar"
-              />
-              <label for="estudar-trabalhar">Estudar e Trabalhar</label>
-              <!-- msg do form-->
-              <span class="error-message" id="objetivo-error"></span>
-            </div>
-            <div class="radio-form">
-              <h4>Quando gostaria de ir?</h4>
-              <input type="radio" name="tempo" id="6meses" value="6meses" />
-              <label for="6meses">Em até 6 meses</label>
-              <input type="radio" name="tempo" id="12meses" value="12meses" />
-              <label for="12meses">Em até 12 meses</label>
-              <input
-                type="radio"
-                name="tempo"
-                id="indefinido"
-                value="indefinido"
-              />
-              <label for="indefinido">Indefinido</label>
-              <span class="error-message" id="tempo-error"></span>
-            </div>
-            <div class="radio-form">
-              <h4>Valor disponível para investimento (R$)</h4>
-              <input type="radio" name="valor" id="10mil" value="10mil" />
-              <label for="10mil">Até 10 mil</label>
-              <input type="radio" name="valor" id="1020mil" value="1020mil" />
-              <label for="1020mil">De 10 mil a 20 mil</label>
-              <input type="radio" name="valor" id="20mil" value="20mil" />
-              <label for="20mil">Acima de 20 mil</label>
-              <!-- msg do form-->
-              <span class="error-message" id="valor-error"></span>
-            </div>
-            <div class="input-form">
-              <!-- msg do form-->
-              <span class="sucesso-message" id="sucesso-message"></span>
-              <br />
-              <input type="submit" value="Enviar" />
-            </div>
-          </fieldset>
-        </form>
+        <!-- Formulário -->
+        <section id="fale-conosco">
+            <form action="#" method="post">
+                <fieldset>
+                    <h2>Fale com a gente!</h2>
+                    <div class="input-form">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" />
+                        <!-- msg do form-->
+                        <span class="error-message" id="nome-error"></span>
+                    </div>
+                    <div class="input-form">
+                        <input type="email" name="email" id="email" placeholder="E-mail" />
+                        <!-- msg do form-->
+                        <span class="error-message" id="email-error"></span>
+                    </div>
 
-        <div class="imagem-form">
-          <img class="" src="Imagens/f.png" alt="" />
-        </div>
-      </section>
+                    <div class="select-form">
+                        <select name="agencia" id="agencia-form">
+                            <option value="" disabled selected>
+                                Escolha a sua agência
+                            </option>
+                            <option value="agencia">Agência Group One</option>
+                        </select>
+                        <!-- msg do form-->
+                        <span class="error-message" id="agencia-error"></span>
+                    </div>
+                    <div class="select-form">
+                        <select name="destino" id="destino-form">
+                            <option value="" disabled selected>
+                                Escolha o seu destino
+                            </option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Canada">Canadá</option>
+                            <option value="Espanha">Espanha</option>
+                            <option value="Austrália">Austrália</option>
+                        </select>
+                        <!-- msg do form-->
+                        <span class="error-message" id="destino-error"></span>
+                    </div>
+                    <div class="radio-form">
+                        <h4>Objetivo do Intercâmbio</h4>
+                        <input type="radio" name="objetivo" id="estudar" value="estudar" />
+                        <label for="estudar">Estudar</label>
+                        <input type="radio" name="objetivo" id="trabalhar" value="trabalhar" />
+                        <label for="trabalhar">Trabalhar</label>
+                        <input type="radio" name="objetivo" id="estudar-trabalhar" value="estudar-trabalhar" />
+                        <label for="estudar-trabalhar">Estudar e Trabalhar</label>
+                        <!-- msg do form-->
+                        <span class="error-message" id="objetivo-error"></span>
+                    </div>
+                    <div class="radio-form">
+                        <h4>Quando gostaria de ir?</h4>
+                        <input type="radio" name="tempo" id="6meses" value="6meses" />
+                        <label for="6meses">Em até 6 meses</label>
+                        <input type="radio" name="tempo" id="12meses" value="12meses" />
+                        <label for="12meses">Em até 12 meses</label>
+                        <input type="radio" name="tempo" id="indefinido" value="indefinido" />
+                        <label for="indefinido">Indefinido</label>
+                        <span class="error-message" id="tempo-error"></span>
+                    </div>
+                    <div class="radio-form">
+                        <h4>Valor disponível para investimento (R$)</h4>
+                        <input type="radio" name="valor" id="10mil" value="10mil" />
+                        <label for="10mil">Até 10 mil</label>
+                        <input type="radio" name="valor" id="1020mil" value="1020mil" />
+                        <label for="1020mil">De 10 mil a 20 mil</label>
+                        <input type="radio" name="valor" id="20mil" value="20mil" />
+                        <label for="20mil">Acima de 20 mil</label>
+                        <!-- msg do form-->
+                        <span class="error-message" id="valor-error"></span>
+                    </div>
+                    <div class="input-form">
+                        <!-- msg do form-->
+                        <span class="sucesso-message" id="sucesso-message"></span>
+                        <br />
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="imagem-form">
+                <img class="" src="Imagens/f.png" alt="" />
+            </div>
+        </section>
     </main>
 
     <footer>
-      <section class="footer-newsletter">
-        <div id="footer-newsletter-text">
-          <h2>Newsletter</h2>
-          <p>
-            Fique por dentro de todas as novidades e receba as melhores dicas de
-            viagem!
-          </p>
-        </div>
-        <div id="footer-newsletter-form">
-          <form action="#" method="post">
-            <input
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Nome"
-              required
-            />
-            <!-- msg do form-->
-            <span class="error-message" id="nome-error"></span>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              required
-            />
+        <section class="footer-newsletter">
+            <div id="footer-newsletter-text">
+                <h2>Newsletter</h2>
+                <p>
+                    Fique por dentro de todas as novidades e receba as melhores dicas de
+                    viagem!
+                </p>
+            </div>
+            <div id="footer-newsletter-form">
+                <form action="#" method="post">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required />
+                    <!-- msg do form-->
+                    <span class="error-message" id="nome-error"></span>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required />
 
-            <input type="submit" value="Enviar" />
-          </form>
-        </div>
-      </section>
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+        </section>
 
-      <section id="social-links">
-        <h5>Nossas redes:</h5>
-        <ul>
-          <li>
-            <img
-              src="./Imagens/logo-footer-instagram.png"
-              alt="Logo Instagram"
-            /><a href="#" target="_blank">@Agência</a>
-          </li>
-          <li>
-            <img
-              src="./Imagens/logo-footer-whatsapp.png"
-              alt="Logo WhatsApp"
-            /><a href="#" target="_blank">+55 12 3456-7890</a>
-          </li>
-          <li>
-            <img
-              src="./Imagens/logo-footer-facebook.png"
-              alt="Logo Facebook"
-            /><a href="#" target="_blank">@GROUP ONE Agência</a>
-          </li>
-        </ul>
-      </section>
+        <section id="social-links">
+            <h5>Nossas redes:</h5>
+            <ul>
+                <li>
+                    <img src="./Imagens/logo-footer-instagram.png" alt="Logo Instagram" /><a href="#"
+                        target="_blank">@Agência</a>
+                </li>
+                <li>
+                    <img src="./Imagens/logo-footer-whatsapp.png" alt="Logo WhatsApp" /><a href="#" target="_blank">+55
+                        12 3456-7890</a>
+                </li>
+                <li>
+                    <img src="./Imagens/logo-footer-facebook.png" alt="Logo Facebook" /><a href="#"
+                        target="_blank">@GROUP ONE Agência</a>
+                </li>
+            </ul>
+        </section>
 
-      <section class="footer-links">
-        <div id="footer-links-img">
-          <img
-            src="./Imagens/logo-footer-links.png"
-            alt="imagem-logo-group-one"
-          />
-        </div>
-        <div id="footer-links-institucional">
-          <h4>Institucional</h4>
-          <ul>
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="#">Parcerias Educacionais</a></li>
-            <li><a href="#">Trabalhe conosco</a></li>
-            <li><a href="#">Fale conosco</a></li>
-          </ul>
-        </div>
-        <div id="footer-links-estudar">
-          <h4>Estudar</h4>
-          <ul>
-            <li><a href="#">Curso de Idiomas</a></li>
-            <li><a href="#">High School</a></li>
-            <li><a href="#">College Pathway</a></li>
-            <li><a href="#">Programa de férias</a></li>
-          </ul>
-        </div>
-        <div id="footer-links-trabalhar">
-          <h4>Trabalhar</h4>
-          <ul>
-            <li><a href="#">Study and Work</a></li>
-            <li><a href="#">Estágio e Trainne</a></li>
-            <li><a href="#">Trabalhos voluntários</a></li>
-            <li><a href="#">Inglês para Hotelaria</a></li>
-          </ul>
-        </div>
-        <div id="footer-links-idiomas">
-          <h4>Idiomas</h4>
-          <ul>
-            <li><a href="#">Alemão</a></li>
-            <li><a href="#">Árabe</a></li>
-            <li><a href="#">Chinês</a></li>
-            <li><a href="#">Inglês</a></li>
-          </ul>
-        </div>
-      </section>
+        <section class="footer-links">
+            <div id="footer-links-img">
+                <img src="./Imagens/logo-footer-links.png" alt="imagem-logo-group-one" />
+            </div>
+            <div id="footer-links-institucional">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Parcerias Educacionais</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+            <div id="footer-links-estudar">
+                <h4>Estudar</h4>
+                <ul>
+                    <li><a href="#">Curso de Idiomas</a></li>
+                    <li><a href="#">High School</a></li>
+                    <li><a href="#">College Pathway</a></li>
+                    <li><a href="#">Programa de férias</a></li>
+                </ul>
+            </div>
+            <div id="footer-links-trabalhar">
+                <h4>Trabalhar</h4>
+                <ul>
+                    <li><a href="#">Study and Work</a></li>
+                    <li><a href="#">Estágio e Trainne</a></li>
+                    <li><a href="#">Trabalhos voluntários</a></li>
+                    <li><a href="#">Inglês para Hotelaria</a></li>
+                </ul>
+            </div>
+            <div id="footer-links-idiomas">
+                <h4>Idiomas</h4>
+                <ul>
+                    <li><a href="#">Alemão</a></li>
+                    <li><a href="#">Árabe</a></li>
+                    <li><a href="#">Chinês</a></li>
+                    <li><a href="#">Inglês</a></li>
+                </ul>
+            </div>
+        </section>
 
-      <section class="footer-rights">
-        <img src="./Imagens/logo_png.png" alt="logo-group-one" />
-        <small>&copy; 2024 Group Agência. Todos os direitos reservados.</small>
-      </section>
+        <section class="footer-rights">
+            <img src="./Imagens/logo_png.png" alt="logo-group-one" />
+            <small>&copy; 2024 Group Agência. Todos os direitos reservados.</small>
+        </section>
     </footer>
-  </body>
+</body>
+
 </html>
